@@ -27,12 +27,13 @@ body {
     justify-content: center;
 }
 
-.logoContainer {
+.logoContainer>a {
     font-size: 3rem;
     color: rgba(0, 0, 0, 0.822);
     font-weight: 700;
     align-items: center;
     display: flex;
+    text-decoration: none;
 }
 
 .logoContainer img {
