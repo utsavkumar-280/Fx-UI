@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "./ComponentsStyles/componentsMain.css";
 * {
   border: 0;
   padding: 0;
@@ -8,10 +9,33 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Inter", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primaryBgDark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primaryLight);
+  /* border-radius: 1rem; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+::-webkit-scrollbar-track:hover {
+  background-color: var(--secondaryLight);
 }
 
 .mainPageLayout {
@@ -21,10 +45,10 @@ body {
 .mainHeader {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: var(--primaryBgLight);
   padding: 1rem;
   min-height: 7vh;
-  border-bottom: 0.01rem solid rgba(194, 194, 194, 0.363);
+  border-bottom: 0.01rem solid var(--divider);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +56,7 @@ body {
 
 .logoContainer > a {
   font-size: 3rem;
-  color: rgba(0, 0, 0, 0.822);
+  color: var(--primary);
   font-weight: 700;
   align-items: center;
   display: flex;
@@ -52,7 +76,7 @@ body {
 .socialContainer > a {
   font-size: 1.9rem;
   font-weight: 500;
-  color: #6b7280;
+  color: var(--primary);
   text-decoration: none;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -61,8 +85,8 @@ body {
 }
 
 .socialContainer > a:hover {
-  background-color: #e2feff;
-  color: #0e7490;
+  background-color: var(--secondaryLight);
+  color: var(--secondary);
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -76,8 +100,8 @@ body {
 }
 
 .socialContainer > i:hover {
-  background-color: #e2feff;
-  color: #0e7490;
+  background-color: var(--secondaryLight);
+  color: var(--secondary);
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -100,7 +124,7 @@ body {
 }
 
 .heroText > h1 {
-  color: #111827;
+  color: var(--primary);
   text-align: center;
   font-size: 4rem;
   font-weight: 800;
@@ -108,7 +132,7 @@ body {
 }
 
 .heroText > p {
-  color: #6b7280;
+  color: var(--primaryLight);
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
@@ -116,10 +140,10 @@ body {
 }
 
 .footerContainer {
-  background-color: white;
+  background-color: var(--primaryBgLight);
   padding: 1rem;
   min-height: 15vh;
-  border-top: 0.01rem solid rgba(194, 194, 194, 0.363);
+  border-top: 0.01rem solid var(--divider);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -128,7 +152,7 @@ body {
 .connectMe {
   font-size: 1.9rem;
   font-weight: 500;
-  color: #6b7280;
+  color: var(--primaryLight);
   text-decoration: none;
   padding: 1rem;
 }
@@ -138,7 +162,7 @@ body {
 }
 
 .socialNav > a > i {
-  color: #111827;
+  color: var(--primary);
   font-size: 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -147,8 +171,8 @@ body {
 }
 
 .socialNav > a > i:hover {
-  background-color: #e2feff;
-  color: #0e7490;
+  background-color: var(--secondaryLight);
+  color: var(--secondary);
   border-radius: 0.5rem;
   cursor: pointer;
 }
