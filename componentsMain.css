@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import "./ComponentsStyles/accordian.css";
+@import "./ComponentsStyles/alerts.css";
+@import "./ComponentsStyles/badge.css";
+@import "./ComponentsStyles/breadcrumb.css";
+@import "./ComponentsStyles/buttons.css";
+@import "./ComponentsStyles/cards.css";
+@import "./ComponentsStyles/carousel.css";
+@import "./ComponentsStyles/dropdowns.css";
+@import "./ComponentsStyles/modal.css";
+@import "./ComponentsStyles/navbar.css";
+@import "./ComponentsStyles/toasts.css";
+
+@import "./ComponentsStyles/forms/formControl.css";
+@import "./ComponentsStyles/forms/badge.css";
+@import "./ComponentsStyles/forms/checkRadios.css";
+@import "./ComponentsStyles/forms/floatingLabel.css";
+@import "./ComponentsStyles/forms/inputGroup.css";
+@import "./ComponentsStyles/forms/range.css";
+@import "./ComponentsStyles/forms/selects.css";
+
+@import "./ComponentsStyles/content/images.css";
+@import "./ComponentsStyles/content/typography.css";
+
+:root {
+  --primary: #111827;
+  --primaryLight: #6b7280;
+  --primaryBgLight: #ffffff;
+  --primaryBgDark: #f1f1f1;
+  --divider: #c2c2c25d;
+
+  --secondary: #0e7490;
+  --secondaryLight: #e2feff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}

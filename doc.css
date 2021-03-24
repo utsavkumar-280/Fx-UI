@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
-@import "./ComponentsStyles/componentsMain.css";
+@import "./componentsMain.css";
 * {
   border: 0;
   padding: 0;
@@ -150,7 +149,7 @@ body {
   font-weight: 800;
 }
 .intro > p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--primaryLight);
   padding: 1rem 0rem;
@@ -162,5 +161,53 @@ body {
   font-weight: 800;
 }
 pre {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .mainPageLayout {
+    padding: 0 7.5vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "sidebar mainContentContainer";
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .mainPageLayout {
+    padding: 0 5vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "sidebar mainContentContainer";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainPageLayout {
+    padding: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "sidebar mainContentContainer";
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mainPageLayout {
+    padding: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "mainContentContainer mainContentContainer";
+  }
 }
