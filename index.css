@@ -55,23 +55,29 @@ body {
   color: #6b7280;
   text-decoration: none;
   padding: 1rem;
+  border-radius: 0.5rem;
+  transition: color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .socialContainer > a:hover {
   background-color: #e2feff;
-  color: rgb(14 116 144);
+  color: #0e7490;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .socialContainer > i {
   font-size: 2rem;
+  border-radius: 0.5rem;
   padding: 1rem;
+  transition: color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .socialContainer > i:hover {
   background-color: #e2feff;
-  color: rgb(14 116 144);
+  color: #0e7490;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -105,7 +111,7 @@ body {
   color: #6b7280;
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 1rem;
 }
 
@@ -128,18 +134,21 @@ body {
 }
 
 .connectMe > p {
-  padding: 1rem;
+  padding: 1rem 0rem;
 }
 
 .socialNav > a > i {
   color: #111827;
   font-size: 2rem;
   padding: 1rem;
+  border-radius: 0.5rem;
+  transition: color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .socialNav > a > i:hover {
   background-color: #e2feff;
-  color: rgb(14 116 144);
+  color: #0e7490;
   border-radius: 0.5rem;
   cursor: pointer;
 }
