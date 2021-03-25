@@ -1,0 +1,28 @@
+.breadcrumbs {
+  padding: 1rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.breadcrumbsItem {
+  display: inline-block;
+  color: var(--primaryLight);
+}
+.breadcrumbsLink {
+  color: var(--secondary);
+}
+
+.nonActiveLink {
+  color: var(--primaryLight);
+  text-decoration: none;
+}
+
+.breadcrumbsItem:not(:last-of-type)::after {
+  content: "/";
+  margin: 0 0.5rem;
+  color: var(--primaryLight);
+}
+.breadcrumbsItem[class*="arrow"]:not(:last-of-type)::after {
+  content: ">";
+  margin: 0 0.5rem;
+  color: var(--primaryLight);
+}
