@@ -1,0 +1,44 @@
+@import "./root.css";
+
+.alert {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  font-size: 2rem;
+  margin: 1rem 0;
+  width: 100%;
+  font-weight: 600;
+}
+
+.alertPrimary {
+  background-color: var(--thirdPrimary1);
+  color: var(--primaryBgLight);
+}
+
+.alertSecondary {
+  background-color: var(--primaryBgDark);
+  color: var(--primaryLight);
+}
+.alertSuccess {
+  background-color: #86efac;
+  color: #166534;
+}
+.alertDanger {
+  background-color: #fca5a5;
+  color: #b91c1c;
+}
+.alertWarning {
+  background-color: #fef08a;
+  color: #b45309;
+}
+.alertInfo {
+  background-color: #cffafe;
+  color: #0e7490;
+}
+.alertLight {
+  background-color: var(--primaryBgLight);
+  border: 0.2rem solid var(--divider);
+}
+.alertDark {
+  background-color: var(--primaryLight);
+  color: var(--primaryBgLight);
+}
