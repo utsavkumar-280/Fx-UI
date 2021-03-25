@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #111827;
+  --primaryLight: #6b7280;
+  --primaryBgLight: #ffffff;
+  --primaryBgDark: #f1f1f1;
+  --divider: #c2c2c25d;
+
+  --secondary: #0e7490;
+  --secondaryLight: #e2feff;
+
+  --thirdPrimary: #14b8a6;
+  --thirdPrimary1: #2dd4bf;
+  --thirdPrimaryLight: #99f6e4;
+  --thirdPrimaryLighter: #f0fdfa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
