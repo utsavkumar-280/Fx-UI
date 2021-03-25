@@ -36,7 +36,8 @@ html {
 }
 
 .mainPageLayout {
-  padding: 0rem 15vw;
+  width: 70vw;
+  margin: 0 15vw;
 }
 
 .mainHeader {
@@ -112,7 +113,7 @@ html {
 }
 
 .heroLogo {
-  height: 60rem;
+  max-height: 60rem;
   padding: 2rem;
 }
 
@@ -176,4 +177,33 @@ html {
 
 .end {
   padding: 1rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 1240px) {
+  .mainPageLayout {
+    width: 85vw;
+    margin: 0 7.5vw;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .mainPageLayout {
+    margin: 0 5vw;
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainPageLayout {
+    margin: 0;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mainPageLayout {
+    margin: 0;
+    width: 100vw;
+  }
 }
