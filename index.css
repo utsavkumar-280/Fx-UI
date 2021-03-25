@@ -23,7 +23,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--primaryLight);
+  background: var(--primaryScroll);
   /* border-radius: 1rem; */
 }
 
