@@ -1,0 +1,20 @@
+@import "./root.css";
+
+.badge {
+  padding: 0.3rem 0.75rem;
+  color: var(--primaryBgLight);
+  font-size: inherit;
+  line-height: 1;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+.badgeSecondary {
+  background-color: var(--primaryLight);
+}
+.badgePrimary {
+  background-color: var(--thirdPrimary1);
+}
+.badgePill {
+  border-radius: 5rem;
+  padding: 0.3rem 1.25rem;
+}
