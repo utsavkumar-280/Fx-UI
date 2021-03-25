@@ -37,7 +37,7 @@ pre::-webkit-scrollbar-track {
 
 /* Handle */
 pre::-webkit-scrollbar-thumb {
-  background: var(--primaryLight);
+  background: var(--primaryScroll);
   /* border-radius: 1rem; */
 }
 
