@@ -220,6 +220,20 @@ html {
   justify-content: center;
 }
 
+#vh30 {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#flexRow {
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
 .contentContainer {
   padding: 1rem 0 4rem 0;
 }

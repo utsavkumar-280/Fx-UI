@@ -1,0 +1,141 @@
+@import "./root.css";
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  margin: 0 1.25rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.75rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+/* Solid Buttons */
+.btnSolidPrimary {
+  background-color: var(--thirdPrimary1);
+  color: var(--primaryBgLight);
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnSolidPrimary:hover {
+  background: var(--hover);
+}
+
+.btnSolidSecondary {
+  background-color: var(--primaryLighter);
+  color: var(--primaryBgLight);
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnSolidSecondary:hover {
+  background: var(--primaryLight);
+}
+
+/* Outlined Buttons */
+.btnOutlinedPrimary {
+  border: 1px solid var(--thirdPrimary1);
+  color: var(--thirdPrimary1);
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnOutlinedPrimary:hover {
+  border: 1px solid var(--hover);
+  background-color: var(--hover);
+  color: var(--primaryBgLight);
+}
+.btnOutlinedSecondary {
+  border: 1px solid var(--primaryLighter);
+  color: var(--primaryLighter);
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnOutlinedSecondary:hover {
+  border: 1px solid var(--primaryLight);
+  background-color: var(--primaryLight);
+  color: var(--primaryBgLight);
+}
+
+/* Text Buttons */
+.btnTextPrimary {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: var(--thirdPrimary1);
+  color: var(--primaryLight);
+  background-color: var(--primaryBgLight);
+  padding: 1rem;
+  font-size: 1.75rem;
+  transition: all 0.25s ease-in-out;
+}
+.btnTextPrimary:hover {
+  color: var(--thirdPrimary1);
+  text-decoration-thickness: 0.2rem;
+  cursor: pointer;
+}
+.btnTextSecondary {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: var(--primaryLighter);
+  color: var(--primaryLighter);
+  background-color: var(--primaryBgLight);
+  padding: 1rem;
+  font-size: 1.75rem;
+  transition: all 0.25s ease-in-out;
+}
+.btnTextSecondary:hover {
+  color: var(--primaryLight);
+  text-decoration-thickness: 0.2rem;
+  cursor: pointer;
+}
+
+/* Button Icon */
+.btnIconPrimary .btnIcon {
+  color: var(--thirdPrimary1);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnIconPrimary:hover .btnIcon {
+  color: var(--thirdPrimary1);
+  background-color: var(--secondaryLight);
+}
+.btnIconSecondary .btnIcon {
+  color: var(--primaryLighter);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnIconSecondary:hover .btnIcon {
+  color: var(--primaryLight);
+  background-color: var(--primaryBgDark);
+}
+
+/* Text Icon Button */
+.btnTextIconPrimary {
+  background-color: var(--thirdPrimary1);
+  color: var(--primaryBgLight);
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnTextIconPrimary:hover {
+  background-color: var(--hover);
+}
+
+.btnTextIconPrimary .btnIcon {
+  padding-right: 1rem;
+}
+
+.btnTextIconSecondary {
+  background-color: var(--primaryLighter);
+  color: var(--primaryBgLight);
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btnTextIconSecondary:hover {
+  background-color: var(--primaryLight);
+}
+
+.btnTextIconSecondary .btnIcon {
+  padding-right: 1rem;
+}
