@@ -428,7 +428,7 @@
             content.
           </p>
         </div>
-        <div class="content">
+        <div class="content alignCenter">
           <!--image slider start-->
           <div class="slider">
             <div class="slides">
@@ -515,6 +515,20 @@
                       </div>
                       
                   </div>
+                </xmp>
+              </code> 
+            </pre>
+        <pre>
+              <code class="language-javascript" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  var counter = 1;
+                  setInterval(function () {
+                    document.getElementById("radio" + counter).checked = true;
+                    counter++;
+                    if (counter > 12) {
+                      counter = 1;
+                    }
+                  }, 5000);
                 </xmp>
               </code> 
             </pre>
@@ -645,10 +659,10 @@
             content.
           </p>
         </div>
-        <div class="content">
-          <button class="success">Show success</button>
-          <button class="warning">Show warning</button>
-          <button class="error">Show error</button>
+        <div class="content" id="flexRow">
+          <button class="btn btnSolid btnSolidPrimary success">Show success</button>
+          <button class="btn btnSolid btnSolidPrimary warning">Show warning</button>
+          <button class="btn btnSolid btnSolidPrimary error">Show error</button>
         </div>
         <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">

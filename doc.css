@@ -219,7 +219,9 @@ html {
   flex-direction: column;
   justify-content: center;
 }
-
+.alignCenter {
+  align-items: center;
+}
 #vh30 {
   height: 30vh;
   display: flex;
