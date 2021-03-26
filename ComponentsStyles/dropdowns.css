@@ -1,0 +1,50 @@
+@import "./root.css";
+.dropContainer {
+  display: flex;
+  background-color: var(--thirdPrimary1);
+  font-size: 2rem;
+}
+
+.dropItem {
+  position: relative;
+  display: block;
+  padding: 1.5rem 3rem;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: var(--thirdPrimary1);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.dropItem:hover {
+  background-color: var(--hover);
+}
+
+.dropItemGroup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  background-color: var(--thirdPrimary1);
+}
+
+.dropItem:hover .dropItemGroup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+}
+#vh30 {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
