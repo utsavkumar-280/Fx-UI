@@ -19,20 +19,20 @@
   color: var(--primaryLight);
 }
 .alertSuccess {
-  background-color: #86efac;
-  color: #166534;
+  background-color: var(--successBg);
+  color: var(--success);
 }
 .alertDanger {
-  background-color: #fca5a5;
-  color: #b91c1c;
+  background-color: var(--dangerBg);
+  color: var(--danger);
 }
 .alertWarning {
-  background-color: #fef08a;
-  color: #b45309;
+  background-color: var(--warningBg);
+  color: var(--warning);
 }
 .alertInfo {
-  background-color: #cffafe;
-  color: #0e7490;
+  background-color: var(--infoBg);
+  color: var(--info);
 }
 .alertLight {
   background-color: var(--primaryBgLight);
