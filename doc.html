@@ -1,159 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./prism/prismLucario.css" />
-    <link rel="stylesheet" href="./doc.css" />
-    <title>Fx UI</title>
-  </head>
 
-  <body>
-    <div class="mainPageLayout">
-      <header class="mainHeader">
-        <div class="logoContainer">
-          <a href="./index.html"
-            ><img src="./assets/flash.svg" alt="#" />
-            <div>Fx UI</div>
-          </a>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./prism/prismLucario.css" />
+  <link rel="stylesheet" href="./doc.css" />
+  <title>Fx UI</title>
+</head>
 
-      <nav class="sidebar">
-        <div class="scrollContainer">
-          <h2>Getting Started</h2>
-          <ul>
-            <li><a href="#intro">Installation</a></li>
-          </ul>
-          <h2>Components</h2>
-          <ul>
-            <li><a href="#mainAccordian"> Accordian</a></li>
-            <li><a href="#mainAlerts"> Alerts</a></li>
-            <li><a href="#mainBadge"> Badge</a></li>
-            <li><a href="#mainBreadcrumb"> Breadcrumb</a></li>
-            <li><a href="#mainButtons"> Buttons</a></li>
-            <li><a href="#mainCards"> Cards</a></li>
-            <li><a href="#mainCarousel"> Carousel</a></li>
-            <li><a href="#mainDropdowns"> Dropdowns</a></li>
-            <li><a href="#mainModal"> Modal</a></li>
-            <li><a href="#mainToasts"> Toasts</a></li>
-          </ul>
-          <h2>Forms</h2>
-          <ul>
-            <li><a href="#mainFormControl"> Form Control</a></li>
-            <li><a href="#mainSelects"> Selects</a></li>
-            <li><a href="#mainBadge"> Badge</a></li>
-            <li><a href="#mainCheckRadios"> Check and radios</a></li>
-            <li><a href="#mainRange"> Range</a></li>
-            <li><a href="#mainInputGroup"> Input group</a></li>
-            <li><a href="#mainFloatingLables"> Floating Lables</a></li>
-          </ul>
-          <h2>Content</h2>
-          <ul>
-            <li><a href="#mainImages"> Images</a></li>
-            <li><a href="#mainTypography"> Typography</a></li>
-          </ul>
-        </div>
-      </nav>
-      <main class="mainContentContainer">
-        <section class="contentContainer">
-          <div id="intro" class="container">
-            <h1>Installation</h1>
-            <h3>
-              Copy-paste the stylesheet <code>&lt;link&gt;</code> into your
-              <code>&lt;head&gt;</code> before all other stylesheets to load our
-              CSS.
-            </h3>
-            <pre> 
+<body>
+  <div class="mainPageLayout">
+    <header class="mainHeader">
+      <div class="logoContainer">
+        <a href="./index.html"><img src="./assets/flash.svg" alt="#" />
+          <div>Fx UI</div>
+        </a>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="scrollContainer">
+        <h2>Getting Started</h2>
+        <ul>
+          <li><a href="#intro">Installation</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+          <li><a href="#mainAccordian"> Accordian</a></li>
+          <li><a href="#mainAlerts"> Alerts</a></li>
+          <li><a href="#mainBadge"> Badge</a></li>
+          <li><a href="#mainBreadcrumb"> Breadcrumb</a></li>
+          <li><a href="#mainButtons"> Buttons</a></li>
+          <li><a href="#mainCards"> Cards</a></li>
+          <li><a href="#mainCarousel"> Carousel</a></li>
+          <li><a href="#mainDropdowns"> Dropdowns</a></li>
+          <li><a href="#mainModal"> Modal</a></li>
+          <li><a href="#mainToasts"> Toasts</a></li>
+        </ul>
+        <h2>Forms</h2>
+        <ul>
+          <li><a href="#mainFormControl"> Form Control</a></li>
+          <li><a href="#mainSelects"> Selects</a></li>
+          <li><a href="#mainBadge"> Badge</a></li>
+          <li><a href="#mainCheckRadios"> Check and radios</a></li>
+          <li><a href="#mainRange"> Range</a></li>
+          <li><a href="#mainInputGroup"> Input group</a></li>
+          <li><a href="#mainFloatingLables"> Floating Lables</a></li>
+        </ul>
+        <h2>Content</h2>
+        <ul>
+          <li><a href="#mainImages"> Images</a></li>
+          <li><a href="#mainTypography"> Typography</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="mainContentContainer">
+      <section class="contentContainer">
+        <div id="intro" class="container">
+          <h1>Installation</h1>
+          <h3>
+            Copy-paste the stylesheet <code>&lt;link&gt;</code> into your
+            <code>&lt;head&gt;</code> before all other stylesheets to load our
+            CSS.
+          </h3>
+          <pre>
                 <code class="language-html" data-prismjs-copy="Copy" class="code">
                     <xmp>
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
                     </xmp>
                 </code> 
             </pre>
-          </div>
-        </section>
-        <section class="contentContainer">
-          <div id="mainAccordian" class="container">
-            <h1>Accordian</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-            <div class="content">
-              <div class="accordion">
-                <div>
-                  <input
-                    type="checkbox"
-                    name="example_accordion"
-                    id="section1"
-                    class="accordionInput"
-                  />
-                  <label for="section1" class="accordionLabel">Section 1</label>
-                  <div class="accordionContent">
-                    <p>Section 1</p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Numquam sit reiciendis, ipsam quaerat, aperiam
-                      perspiciatis ad ullam architecto impedit natus illo
-                      nostrum molestias voluptas earum a voluptatibus fugiat
-                      fuga facere!
-                    </p>
-                  </div>
+        </div>
+      </section>
+      <section class="contentContainer">
+        <div id="mainAccordian" class="container">
+          <h1>Accordian</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+          <div class="content">
+            <div class="accordion">
+              <div>
+                <input type="checkbox" name="example_accordion" id="section1" class="accordionInput" />
+                <label for="section1" class="accordionLabel">Section 1</label>
+                <div class="accordionContent">
+                  <p>Section 1</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam sit reiciendis, ipsam quaerat, aperiam
+                    perspiciatis ad ullam architecto impedit natus illo
+                    nostrum molestias voluptas earum a voluptatibus fugiat
+                    fuga facere!
+                  </p>
                 </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    name="example_accordion"
-                    id="section2"
-                    class="accordionInput"
-                  />
-                  <label for="section2" class="accordionLabel">Section 2</label>
-                  <div class="accordionContent">
-                    <p>Section 2</p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Numquam sit reiciendis, ipsam quaerat, aperiam
-                      perspiciatis ad ullam architecto impedit natus illo
-                      nostrum molestias voluptas earum a voluptatibus fugiat
-                      fuga facere!
-                    </p>
-                  </div>
+              </div>
+              <div>
+                <input type="checkbox" name="example_accordion" id="section2" class="accordionInput" />
+                <label for="section2" class="accordionLabel">Section 2</label>
+                <div class="accordionContent">
+                  <p>Section 2</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam sit reiciendis, ipsam quaerat, aperiam
+                    perspiciatis ad ullam architecto impedit natus illo
+                    nostrum molestias voluptas earum a voluptatibus fugiat
+                    fuga facere!
+                  </p>
                 </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    name="example_accordion"
-                    id="section3"
-                    class="accordionInput"
-                  />
-                  <label for="section3" class="accordionLabel">Section 3</label>
-                  <div class="accordionContent">
-                    <p>Section 3</p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Numquam sit reiciendis, ipsam quaerat, aperiam
-                      perspiciatis ad ullam architecto impedit natus illo
-                      nostrum molestias voluptas earum a voluptatibus fugiat
-                      fuga facere!
-                    </p>
-                  </div>
+              </div>
+              <div>
+                <input type="checkbox" name="example_accordion" id="section3" class="accordionInput" />
+                <label for="section3" class="accordionLabel">Section 3</label>
+                <div class="accordionContent">
+                  <p>Section 3</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam sit reiciendis, ipsam quaerat, aperiam
+                    perspiciatis ad ullam architecto impedit natus illo
+                    nostrum molestias voluptas earum a voluptatibus fugiat
+                    fuga facere!
+                  </p>
                 </div>
               </div>
             </div>
-            <pre> 
+          </div>
+          <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <div class="accordion">
@@ -169,36 +150,36 @@
                 </xmp>
               </code> 
             </pre>
-          </div>
-        </section>
-        <section class="contentContainer">
-          <div id="mainAlerts" class="container">
-            <h1>Alerts</h1>
-            <h3>
-              Provide contextual feedback messages for typical user actions with
-              the handful of available and flexible alert messages.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Alerts are available in 8 types-
-              primary,secondary,success,danger,warning,info,light,dark.
-            </p>
-            <p>
-              You can use alert by adding the class "alert" along with alert
-              type class name (ie. class="alert secondary")
-            </p>
-          </div>
-          <div class="content">
-            <div class="alert alertPrimary">A simple primary alert!</div>
-            <div class="alert alertSecondary">A simple secondary alert!</div>
-            <div class="alert alertSuccess">A simple success alert!</div>
-            <div class="alert alertDanger">A simple danger alert!</div>
-            <div class="alert alertWarning">A simple warning alert!</div>
-            <div class="alert alertInfo">A simple info alert!</div>
-            <div class="alert alertLight">A simple light alert!</div>
-            <div class="alert alertDark">A simple dark alert!</div>
-          </div>
-          <pre> 
+        </div>
+      </section>
+      <section class="contentContainer">
+        <div id="mainAlerts" class="container">
+          <h1>Alerts</h1>
+          <h3>
+            Provide contextual feedback messages for typical user actions with
+            the handful of available and flexible alert messages.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Alerts are available in 8 types-
+            primary,secondary,success,danger,warning,info,light,dark.
+          </p>
+          <p>
+            You can use alert by adding the class "alert" along with alert
+            type class name (ie. class="alert secondary")
+          </p>
+        </div>
+        <div class="content">
+          <div class="alert alertPrimary">A simple primary alert!</div>
+          <div class="alert alertSecondary">A simple secondary alert!</div>
+          <div class="alert alertSuccess">A simple success alert!</div>
+          <div class="alert alertDanger">A simple danger alert!</div>
+          <div class="alert alertWarning">A simple warning alert!</div>
+          <div class="alert alertInfo">A simple info alert!</div>
+          <div class="alert alertLight">A simple light alert!</div>
+          <div class="alert alertDark">A simple dark alert!</div>
+        </div>
+        <pre>
                 <code class="language-html" data-prismjs-copy="Copy" class="code">
                     <xmp>
                     <div class="alert alertPrimary">A simple primary alert!</div>
@@ -212,39 +193,39 @@
                     </xmp>
                 </code> 
                 </pre>
-        </section>
-        <section class="contentContainer">
-          <div id="mainBadge" class="container">
-            <h1>Badges</h1>
-            <h3>
-              Badges can notify you that there are new or unread messages or
-              notifications.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <h1>Example Heading <span class="badge badgePrimary">New</span></h1>
-            <h2>
-              Example Heading <span class="badge badgeSecondary">New</span>
-            </h2>
-            <h3>Example Heading <span class="badge badgePrimary">New</span></h3>
-            <h4>
-              Example Heading <span class="badge badgeSecondary">New</span>
-            </h4>
-            <h5>Example Heading <span class="badge badgePrimary">New</span></h5>
-            <h6>
-              Example Heading <span class="badge badgeSecondary">New</span>
-            </h6>
-            <p>
-              Example Paragraph
-              <span class="badge badgePrimary badgePill">New</span>
-            </p>
-          </div>
-          <pre> 
+      </section>
+      <section class="contentContainer">
+        <div id="mainBadge" class="container">
+          <h1>Badges</h1>
+          <h3>
+            Badges can notify you that there are new or unread messages or
+            notifications.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>Example Heading <span class="badge badgePrimary">New</span></h1>
+          <h2>
+            Example Heading <span class="badge badgeSecondary">New</span>
+          </h2>
+          <h3>Example Heading <span class="badge badgePrimary">New</span></h3>
+          <h4>
+            Example Heading <span class="badge badgeSecondary">New</span>
+          </h4>
+          <h5>Example Heading <span class="badge badgePrimary">New</span></h5>
+          <h6>
+            Example Heading <span class="badge badgeSecondary">New</span>
+          </h6>
+          <p>
+            Example Paragraph
+            <span class="badge badgePrimary badgePill">New</span>
+          </p>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <h1>Example Heading <span class="badge badgePrimary">New</span></h1>
@@ -257,42 +238,42 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
+      </section>
 
-        <!-- Breadcrumbs -->
-        <section class="contentContainer">
-          <div id="mainBreadcrumb" class="container">
-            <h1>Breadcrumb</h1>
-            <h3>
-              Breadcrumbs are a good way to display your current location. This
-              is usually used when you have multiple layers of content.It is
-              used to indicate the current page’s location within a navigational
-              hierarchy
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbsItem">
-                <a href="#" class="breadcrumbsLink">Home</a>
-              </li>
-              <li class="breadcrumbsItem">About</li>
-            </ul>
-            <ul class="breadcrumbs">
-              <li class="breadcrumbsItem">
-                <a href="#" class="breadcrumbsLink">Home</a>
-              </li>
-              <li class="breadcrumbsItem">
-                <a href="#" class="breadcrumbsLink">About</a>
-              </li>
-              <li class="breadcrumbsItem">Profile</li>
-            </ul> 
-          </div>
-          <pre> 
+      <!-- Breadcrumbs -->
+      <section class="contentContainer">
+        <div id="mainBreadcrumb" class="container">
+          <h1>Breadcrumb</h1>
+          <h3>
+            Breadcrumbs are a good way to display your current location. This
+            is usually used when you have multiple layers of content.It is
+            used to indicate the current page’s location within a navigational
+            hierarchy
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem">About</li>
+          </ul>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem">
+              <a href="#" class="breadcrumbsLink">About</a>
+            </li>
+            <li class="breadcrumbsItem">Profile</li>
+          </ul>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                     <ul class="breadcrumbs">
@@ -315,32 +296,31 @@
               </code> 
             </pre>
 
-            <!-- arrowBreadcrumbs -->
-            <div id="mainBreadcrumb" class="container">
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-            <div class="content">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbsItem arrow">
-                        <a href="#" class="breadcrumbsLink">Home</a>
-                    </li>
-                    <li class="breadcrumbsItem arrow">About</li>
-                </ul>
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbsItem arrow">
-                        <a href="#" class="breadcrumbsLink">Home</a>
-                    </li>
-                    <li class="breadcrumbsItem arrow">
-                        <a href="#" class="breadcrumbsLink">About</a>
-                    </li>
-                    <li class="breadcrumbsItem arrow">Profile</li>
-                </ul> 
-            </div>
-            <pre> 
+        <!-- arrowBreadcrumbs -->
+        <div id="mainBreadcrumb" class="container">
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem arrow">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem arrow">About</li>
+          </ul>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem arrow">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem arrow">
+              <a href="#" class="breadcrumbsLink">About</a>
+            </li>
+            <li class="breadcrumbsItem arrow">Profile</li>
+          </ul>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                     <ul class="breadcrumbs">
@@ -362,26 +342,26 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
+      </section>
 
-        <!-- Buttons -->
-        <section class="contentContainer">
-          <div id="mainButtons" class="container">
-            <h1>Buttons</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <h1>content</h1>
-          </div>
-          <pre> 
+      <!-- Buttons -->
+      <section class="contentContainer">
+        <div id="mainButtons" class="container">
+          <h1>Buttons</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <div class="accordion">
@@ -397,26 +377,26 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
+      </section>
 
-        <!-- Cards -->
-        <section class="contentContainer">
-          <div id="mainCards" class="container">
-            <h1>Cards</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <h1>content</h1>
-          </div>
-          <pre> 
+      <!-- Cards -->
+      <section class="contentContainer">
+        <div id="mainCards" class="container">
+          <h1>Cards</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <div class="accordion">
@@ -432,26 +412,26 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
+      </section>
 
-        <!-- Carousel -->
-        <section class="contentContainer">
-          <div id="mainCatousel" class="container">
-            <h1>Carousel</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <h1>content</h1>
-          </div>
-          <pre> 
+      <!-- Carousel -->
+      <section class="contentContainer">
+        <div id="mainCarousel" class="container">
+          <h1>Carousel</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <div class="accordion">
@@ -467,26 +447,102 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
+      </section>
 
-        <!-- Dropdowns -->
-        <section class="contentContainer">
-          <div id="mainDropdowns" class="container">
-            <h1>Dropdowns</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
+      <!-- Dropdowns -->
+      <section class="contentContainer">
+        <div id="mainDropdowns" class="container">
+          <h1>Dropdowns</h1>
+          <h3>
+            Dropdowns are toggleable, contextual overlays for displaying lists of links and more.They’re toggled by
+            hovering.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content" id="vh30">
+          <div class="dropContainer">
+            <div class="dropItem">
+              Home
+              <div class="dropItemGroup">
+                <a href="#" class="dropItem">Home1</a>
+                <a href="#" class="dropItem">Home2</a>
+                <a href="#" class="dropItem">Home3</a>
+              </div>
+            </div>
+            <div class="dropItem">
+              Video Tutorials
+              <div class="dropItemGroup">
+                <a href="#" class="dropItem">HTML</a>
+                <a href="#" class="dropItem">CSS</a>
+                <a href="#" class="dropItem">JavaScript</a>
+              </div>
+            </div>
+            <div class="dropItem">
+              About
+              <div class="dropItemGroup">
+                <a href="#" class="dropItem">About1</a>
+                <a href="#" class="dropItem">About2</a>
+                <a href="#" class="dropItem">About3</a>
+              </div>
+            </div>
           </div>
-          <div class="content">
-            <h1>content</h1>
-          </div>
-          <pre> 
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                    <div class="dropContainer">
+                        <div class="dropItem">
+                            Home
+                            <div class="dropItemGroup">
+                                <a href="#" class="dropItem">Home1</a>
+                                <a href="#" class="dropItem">Home2</a>
+                                <a href="#" class="dropItem">Home3</a>
+                            </div>
+                        </div>
+                        <div class="dropItem">
+                            Video Tutorials
+                            <div class="dropItemGroup">
+                                <a href="#" class="dropItem">HTML</a>
+                                <a href="#" class="dropItem">CSS</a>
+                                <a href="#" class="dropItem">JavaScript</a>
+                            </div>
+                        </div>
+                        <div class="dropItem">
+                            About
+                            <div class="dropItemGroup">
+                                <a href="#" class="dropItem">About1</a>
+                                <a href="#" class="dropItem">About2</a>
+                                <a href="#" class="dropItem">About3</a>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Modal -->
+      <section class="contentContainer">
+        <div id="mainModal" class="container">
+          <h1>Modal</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <div class="accordion">
@@ -502,26 +558,103 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
+      </section>
 
-        <!-- Modal -->
-        <section class="contentContainer">
-          <div id="mainModal" class="container">
-            <h1>Modal</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <h1>content</h1>
-          </div>
-          <pre> 
+      <!-- Toasts -->
+      <section class="contentContainer">
+        <div id="mainToasts" class="container">
+          <h1>Toasts</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <button class="success">Show success</button>
+          <button class="warning">Show warning</button>
+          <button class="error">Show error</button>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <button class="success">Show success</button>
+                  <button class="warning">Show warning</button>
+                  <button class="error">Show error</button>
+                </xmp>
+              </code> 
+        </pre>
+        <pre>
+          <code class="language-javascript" data-prismjs-copy="Copy" class="code">
+            <xmp>
+              let successVar = document.querySelector(".success");
+              let warningVar = document.querySelector(".warning");
+              let errorVar = document.querySelector(".error");
+              
+              const Toast = {
+                init() {
+                  this.hideTimeout = null;
+              
+                  this.el = document.createElement("div");
+                  this.el.className = "toast";
+                  document.body.appendChild(this.el);
+                },
+              
+                show(message, state) {
+                  clearTimeout(this.hideTimeout);
+              
+                  this.el.textContent = message;
+                  this.el.className = "toast toastVisible";
+              
+                  if (state) {
+                    this.el.classList.add(`toast${state}`);
+                  }
+              
+                  this.hideTimeout = setTimeout(() => {
+                    this.el.classList.remove("toastVisible");
+                  }, 2000);
+                },
+              };
+              
+              document.addEventListener("DOMContentLoaded", () => Toast.init());
+              successVar.addEventListener("click", () =>
+                Toast.show("success message !!", "Success")
+              );
+              
+              warningVar.addEventListener("click", () =>
+                Toast.show("warning message  !!", "Warning")
+              );
+              
+              errorVar.addEventListener("click", () =>
+                Toast.show("error message  !!", "Error")
+              ); 
+            </xmp>
+          </code> 
+    </pre>
+      </section>
+
+      <!-- Images -->
+      <section class="contentContainer">
+        <div id="mainImages" class="container">
+          <h1>Images</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <div class="accordion">
@@ -537,102 +670,32 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
+      </section>
 
-        <!-- Toasts -->
-        <section class="contentContainer">
-          <div id="mainToasts" class="container">
-            <h1>Toasts</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <h1>content</h1>
-          </div>
-          <pre> 
-              <code class="language-html" data-prismjs-copy="Copy" class="code">
-                <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
-                    </div>
-                </div>
-                </xmp>
-              </code> 
-            </pre>
-        </section>
-
-        <!-- Images -->
-        <section class="contentContainer">
-          <div id="mainImages" class="container">
-            <h1>Images</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Examples</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <h1>content</h1>
-          </div>
-          <pre> 
-              <code class="language-html" data-prismjs-copy="Copy" class="code">
-                <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
-                    </div>
-                </div>
-                </xmp>
-              </code> 
-            </pre>
-        </section>
-
-        <!-- Typography -->
-        <section class="contentContainer">
-          <div id="mainTypography" class="container">
-            <h1>Typography</h1>
-            <h3>
-              Displays collapsible content panels for presenting information in
-              a limited amount of space.
-            </h3>
-            <h2>Size</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <div class="h1">Example Heading1</div>
-            <div class="h2">Example Heading2</div>
-            <div class="h3">Example Heading3</div>
-            <div class="h4">Example Heading3</div>
-            <div class="h5">Example Heading5</div>
-            <div class="h6">Example Heading6</div>
-            <div class="p">Example Paragraph</div>
-          </div>
-          <pre> 
+      <!-- Typography -->
+      <section class="contentContainer">
+        <div id="mainTypography" class="container">
+          <h1>Typography</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Size</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <div class="h1">Example Heading1</div>
+          <div class="h2">Example Heading2</div>
+          <div class="h3">Example Heading3</div>
+          <div class="h4">Example Heading3</div>
+          <div class="h5">Example Heading5</div>
+          <div class="h6">Example Heading6</div>
+          <div class="p">Example Paragraph</div>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <h1>Example Heading1</h1>
@@ -653,24 +716,24 @@
                 </xmp>
               </code> 
             </pre>
-          <div class="container">
-            <h2>Weight</h2>
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="content">
-            <div class="h1 typeBolder">Example Heading1</div>
-            <div class="h1 typeBold">Example Heading1</div>
-            <div class="h1 typeBoltLite">Example Heading1</div>
-            <div class="h1 typeRegularBolder">Example Heading1</div>
-            <div class="h1 typeRegularBold">Example Heading1</div>
-            <div class="h1 typeRegular">Example Heading1</div>
-            <div class="h1 typeThin">Example Heading1</div>
-            <div class="h1 typeThinner">Example Heading1</div>
-          </div>
-          <pre> 
+        <div class="container">
+          <h2>Weight</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <div class="h1 typeBolder">Example Heading1</div>
+          <div class="h1 typeBold">Example Heading1</div>
+          <div class="h1 typeBoltLite">Example Heading1</div>
+          <div class="h1 typeRegularBolder">Example Heading1</div>
+          <div class="h1 typeRegularBold">Example Heading1</div>
+          <div class="h1 typeRegular">Example Heading1</div>
+          <div class="h1 typeThin">Example Heading1</div>
+          <div class="h1 typeThinner">Example Heading1</div>
+        </div>
+        <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
                 <div class="h1 typeBolder">Example Heading1</div>
@@ -684,9 +747,11 @@
                 </xmp>
               </code> 
             </pre>
-        </section>
-      </main>
-    </div>
-    <script src="./prism/prism.js"></script>
-  </body>
+      </section>
+    </main>
+  </div>
+  <script src="./prism/prism.js"></script>
+  <script src="./ComponentsStyles/logic.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,44 @@
+.toast {
+  position: fixed;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: 500;
+  right: 0rem;
+  bottom: 2rem;
+  padding: 2rem 4rem;
+  background: #cccccc;
+  color: #333333;
+  text-align: center;
+  border: 0.1rem solid #aaaaaa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s, right 0.25s, bottom 0.25s, visibility 0.25s;
+}
+
+.toastVisible {
+  right: 4rem;
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.toastSuccess {
+  background-color: var(--successBg);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.toastWarning {
+  background-color: var(--warningBg);
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.toastError {
+  background-color: var(--dangerBg);
+  border-color: var(--danger);
+  color: var(--danger);
+}
