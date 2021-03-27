@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
+@import "../root.css";
 
 .formContainer {
   background-color: #fff;
@@ -11,10 +10,10 @@
 }
 
 .formHeader {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 0.1rem solid #f0f0f0;
   background-color: var(--thirdPrimary1);
   color: var(--primaryBgLight);
-  padding: 20px 40px;
+  padding: 2rem 4rem;
 }
 
 .formHeader h2 {
@@ -22,29 +21,29 @@
 }
 
 .form {
-  padding: 30px 40px;
+  padding: 3rem 4rem;
 }
 
 .formControl {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
 .formControl label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 .formControl input {
-  border: 2px solid var(--primaryScroll);
-  border-radius: 4px;
+  border: 0.2rem solid var(--primaryScroll);
+  border-radius: 0.4rem;
   display: block;
   font-family: inherit;
   font-size: 1.75rem;
-  padding: 10px;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -54,7 +53,7 @@
 }
 
 .formControl.success input {
-  border-color: #2ecc71;
+  border-color: var(--thirdPrimary1);
 }
 
 .formControl.error input {
@@ -64,12 +63,12 @@
 .formControl i {
   visibility: hidden;
   position: absolute;
-  top: 40px;
-  right: 10px;
+  top: 4rem;
+  right: 1rem;
 }
 
 .formControl.success i.fa-check-circle {
-  color: var(--success);
+  color: var(--thirdPrimary1);
   visibility: visible;
   font-size: 1.5rem;
 }
