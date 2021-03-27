@@ -821,26 +821,45 @@
           </p>
         </div>
         <div class="content">
-          <h1>content</h1>
+          <form id="form" class="form">
+            <div class="formControl">
+              <label for="username">Username</label>
+              <input type="text" placeholder="Normal Input" />
+            </div>
+            <div class="formControl">
+              <label for="username">Username</label>
+              <input type="text" placeholder="Readonly" readonly />
+            </div>
+            <div class="formControl">
+              <label for="username">Username</label>
+              <input type="text" placeholder="Disabled" disabled />
+            </div>
+          </form>
         </div>
         <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
+                  <form id="form" class="form">
+                    <div class="formControl">
+                      <label for="username">Username</label>
+                      <input type="text" placeholder="Normal Input" />
                     </div>
-                </div>
+                    <div class="formControl">
+                      <label for="username">Username</label>
+                      <input type="text" placeholder="Readonly" readonly />
+                    </div>
+                    <div class="formControl">
+                      <label for="username">Username</label>
+                      <input type="text" placeholder="Disabled" disabled />
+                    </div>
+                  </form>
                 </xmp>
               </code> 
             </pre>
       </section>
 
+
+      <!-- File Input -->
       <section class="contentContainer">
         <div id="mainFileInput" class="container">
           <h1>File Input</h1>
@@ -855,28 +874,63 @@
           </p>
         </div>
         <div class="content">
-          <h1>content</h1>
+          <div class="fileInputContainer ">
+            <input class="fileInput" type="file" name="myFile[]" id="myFile" multiple>
+            <button class="btn btnSolidPrimary fileInputButton" type="button">Choose File(s)</button>
+            <span class="fileInputLabel "></span>
+          </div>
         </div>
         <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
-                    </div>
-                </div>
+                  <div class="fileInputContainer ">
+                    <input class="fileInput" type="file" name="myFile[]" id="myFile" multiple>
+                    <button class="btn btnSolidPrimary fileInputButton" type="button">Choose File(s)</button>
+                    <span class="fileInputLabel "></span>
+                  </div>
+                </xmp>
+              </code> 
+            </pre>
+        <pre>
+              <code class="language-javascript" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  //File Input
+                  Array.prototype.forEach.call(
+                    document.querySelectorAll(".fileInputButton"),
+                    function (button) {
+                      const hiddenInput = button.parentElement.querySelector(".fileInput");
+                      const label = button.parentElement.querySelector(".fileInputLabel");
+                      const defaultLabelText = "No file(s) selected";
+
+                      // Set default text for label
+                      label.textContent = defaultLabelText;
+                      label.title = defaultLabelText;
+
+                      button.addEventListener("click", function () {
+                        hiddenInput.click();
+                      });
+
+                      hiddenInput.addEventListener("change", function () {
+                        const filenameList = Array.prototype.map.call(
+                          hiddenInput.files,
+                          function (file) {
+                            return file.name;
+                          }
+                        );
+
+                        label.textContent = filenameList.join(", ") || defaultLabelText;
+                        label.title = label.textContent;
+                      });
+                    }
+                  );
                 </xmp>
               </code> 
             </pre>
       </section>
 
 
-      <!-- Selects -->
+
+      <!-- Select -->
       <section class="contentContainer">
         <div id="mainSelects" class="container">
           <h1>Select</h1>
@@ -912,7 +966,10 @@
       </section>
 
 
-      <!-- Selects -->
+
+
+
+      <!-- DataLists -->
       <section class="contentContainer">
         <div id="mainDataList" class="container">
           <h1>DataList</h1>
@@ -997,20 +1054,18 @@
           </p>
         </div>
         <div class="content">
-          <h1>content</h1>
+          <div class="range">
+            <input type="range" min="0" max="100" value="20" oninput="rangeValue.innerText = this.value">
+            <p id="rangeValue">20</p>
+          </div>
         </div>
         <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
-                    </div>
+                  <div class="slider">
+                    <input type="range" min="0" max="100" value="20" oninput="rangeValue.innerText = this.value">
+                    <p id="rangeValue">20</p>
+                  </div>
                 </div>
                 </xmp>
               </code> 

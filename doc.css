@@ -233,7 +233,7 @@ html {
   flex-wrap: wrap;
 }
 #flexRow {
-  height: 100%;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

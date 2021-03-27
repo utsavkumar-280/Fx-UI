@@ -146,3 +146,33 @@ function isEmail(email) {
     email
   );
 }
+
+//File Input
+Array.prototype.forEach.call(
+  document.querySelectorAll(".fileInputButton"),
+  function (button) {
+    const hiddenInput = button.parentElement.querySelector(".fileInput");
+    const label = button.parentElement.querySelector(".fileInputLabel");
+    const defaultLabelText = "No file(s) selected";
+
+    // Set default text for label
+    label.textContent = defaultLabelText;
+    label.title = defaultLabelText;
+
+    button.addEventListener("click", function () {
+      hiddenInput.click();
+    });
+
+    hiddenInput.addEventListener("change", function () {
+      const filenameList = Array.prototype.map.call(
+        hiddenInput.files,
+        function (file) {
+          return file.name;
+        }
+      );
+
+      label.textContent = filenameList.join(", ") || defaultLabelText;
+      label.title = label.textContent;
+    });
+  }
+);
