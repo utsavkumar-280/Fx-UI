@@ -1,0 +1,8 @@
+@import "../root.css";
+
+#myColor {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+  color: var(--primary);
+}
