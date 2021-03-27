@@ -35,7 +35,7 @@
           <li><a href="#mainBadge"> Badge</a></li>
           <li><a href="#mainBreadcrumb"> Breadcrumb</a></li>
           <li><a href="#mainButtons"> Buttons</a></li>
-          <li><a href="#mainCards"> Cards</a></li>
+          <!-- <li><a href="#mainCards"> Cards</a></li> -->
           <li><a href="#mainCarousel"> Carousel</a></li>
           <li><a href="#mainDropdowns"> Dropdowns</a></li>
           <li><a href="#mainModal"> Modal</a></li>
@@ -453,110 +453,60 @@
             content.
           </p>
         </div>
-        <div class="content alignCenter">
-          <!--image slider start-->
-          <div class="slider">
-            <div class="slides">
-              <!--radio buttons start-->
-              <input type="radio" name="radio-btn" id="radio1">
-              <input type="radio" name="radio-btn" id="radio2">
-              <input type="radio" name="radio-btn" id="radio3">
-              <input type="radio" name="radio-btn" id="radio4">
-
-              <!--slide images start-->
-              <div class="slide first">
-                <img src="./assets/p1.jpg" alt="#">
-              </div>
-              <div class="slide">
-                <img src="./assets/p2.jpg" alt="#">
-              </div>
-              <div class="slide">
-                <img src="./assets/p3.jpg" alt="#">
-              </div>
-              <div class="slide">
-                <img src="./assets/p4.jpg" alt="#">
-              </div>
-
-              <!--automatic navigation start-->
-              <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-              </div>
-
-            </div>
-            <!--manual navigation start-->
-            <div class="navigation-manual">
-              <label for="radio1" class="manual-btn"></label>
-              <label for="radio2" class="manual-btn"></label>
-              <label for="radio3" class="manual-btn"></label>
-              <label for="radio4" class="manual-btn"></label>
-            </div>
-
+        <div class="content">
+          <div id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+            <label for="s1" id="slide1">
+              <img src="./assets/img1.jpg" height="100%" width="100%">
+            </label>
+            <label for="s2" id="slide2">
+              <img src="./assets/img2.jpg" height="100%" width="100%">
+            </label>
+            <label for="s3" id="slide3">
+              <img src="./assets/img3.jpg" height="100%" width="100%">
+            </label>
+            <label for="s4" id="slide4">
+              <img src="./assets/img4.jpg" height="100%" width="100%">
+            </label>
+            <label for="s5" id="slide5">
+              <img src="./assets/img5.jpg" height="100%" width="100%">
+            </label>
           </div>
         </div>
+
         <pre>
-              <code class="language-html" data-prismjs-copy="Copy" class="code">
-                <xmp>
-                  <!--image slider start-->
-                  <div class="slider">
-                    <div class="slides">
-                      <!--radio buttons start-->
-                      <input type="radio" name="radio-btn" id="radio1">
-                      <input type="radio" name="radio-btn" id="radio2">
-                      <input type="radio" name="radio-btn" id="radio3">
-                      <input type="radio" name="radio-btn" id="radio4">
-                      
-                      <!--slide images start-->
-                      <div class="slide first">
-                        <img src="./assets/p1.jpg" alt="#">
-                      </div>
-                      <div class="slide">
-                        <img src="./assets/p2.jpg" alt="#">
-                      </div>
-                      <div class="slide">
-                        <img src="./assets/p3.jpg" alt="#">
-                      </div>
-                      <div class="slide">
-                        <img src="./assets/p4.jpg" alt="#">
-                      </div>
-                      
-                      <!--automatic navigation start-->
-                      <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                      </div>
-                      
-                    </div>
-                      <!--manual navigation start-->
-                      <div class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
-                      </div>
-                      
+          <code class="language-html" data-prismjs-copy="Copy" class="code">
+            <xmp>
+                  <div id="slider">
+                    <input type="radio" name="slider" id="s1">
+                    <input type="radio" name="slider" id="s2">
+                    <input type="radio" name="slider" id="s3" checked>
+                    <input type="radio" name="slider" id="s4">
+                    <input type="radio" name="slider" id="s5">
+                    <label for="s1" id="slide1">
+                      <img src="./assets/img1.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s2" id="slide2">
+                      <img src="./assets/img2.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s3" id="slide3">
+                      <img src="./assets/img3.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s4" id="slide4">
+                      <img src="./assets/img4.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s5" id="slide5">
+                      <img src="./assets/img5.jpg" height="100%" width="100%">
+                    </label>
                   </div>
                 </xmp>
               </code> 
-            </pre>
-        <pre>
-              <code class="language-javascript" data-prismjs-copy="Copy" class="code">
-                <xmp>
-                  var counter = 1;
-                  setInterval(function () {
-                    document.getElementById("radio" + counter).checked = true;
-                    counter++;
-                    if (counter > 4) {
-                      counter = 1;
-                    }
-                  }, 5000);
-                </xmp>
-              </code> 
-            </pre>
+        </pre>
+
       </section>
 
       <!-- Dropdowns -->
@@ -1012,31 +962,63 @@
             Displays collapsible content panels for presenting information in
             a limited amount of space.
           </h3>
-          <h2>Examples</h2>
+          <h2>Radios</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content alignCenter">
+          <div class="radioContainer">
+            <input type="radio" class="radioInput" value="Option1" id="meRadio1" name="meRadio">
+            <label for="meRadio1" class="radioLabel">Option1</label>
+
+            <input type="radio" class="radioInput" value="Option2" id="meRadio2" name="meRadio">
+            <label for="meRadio2" class="radioLabel">Option2</label>
+
+            <input type="radio" class="radioInput" value="Option3" id="meRadio3" name="meRadio">
+            <label for="meRadio3" class="radioLabel">Option3</label>
+          </div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <div class="radioContainer">
+                    <input type="radio" class="radioInput" value="Option1" id="meRadio1" name="meRadio">
+                    <label for="meRadio1" class="radioLabel">Option1</label>
+        
+                    <input type="radio" class="radioInput" value="Option2" id="meRadio2" name="meRadio">
+                    <label for="meRadio2" class="radioLabel">Option2</label>
+        
+                    <input type="radio" class="radioInput" value="Option3" id="meRadio3" name="meRadio">
+                    <label for="meRadio3" class="radioLabel">Option3</label>
+                  </div>
+                </xmp>
+              </code> 
+            </pre>
+        <div class="container">
+          <h2>Checkbox</h2>
           <p>
             Click the accordions below to expand/collapse the accordion
             content.
           </p>
         </div>
         <div class="content">
-          <h1>content</h1>
+          <label class="toggle" for="myToggle">
+            <input class="toggleInput" name="" type="checkbox" id="myToggle">
+            <div class="toggleFill"></div>
+          </label>
         </div>
         <pre>
-              <code class="language-html" data-prismjs-copy="Copy" class="code">
-                <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
-                    </div>
-                </div>
-                </xmp>
-              </code> 
-            </pre>
+                  <code class="language-html" data-prismjs-copy="Copy" class="code">
+                    <xmp>
+                      <label class="toggle" for="myToggle">
+                        <input class="toggleInput" name="" type="checkbox" id="myToggle">
+                        <div class="toggleFill"></div>
+                      </label>
+                    </xmp>
+                  </code> 
+                </pre>
       </section>
 
       <!-- Range -->
