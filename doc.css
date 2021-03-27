@@ -224,8 +224,8 @@ html {
 .alignCenter {
   align-items: center;
 }
-#vh30 {
-  height: 30vh;
+#vh50 {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,7 +233,7 @@ html {
   flex-wrap: wrap;
 }
 #flexRow {
-  height: 15vh;
+  height: 20vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
