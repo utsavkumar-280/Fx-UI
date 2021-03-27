@@ -25,20 +25,21 @@
   padding: 30px 40px;
 }
 
-.form-control {
+.formControl {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
 
-.form-control label {
+.formControl label {
   display: inline-block;
   margin-bottom: 5px;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.form-control input {
-  border: 2px solid #f0f0f0;
+.formControl input {
+  border: 2px solid var(--primaryScroll);
   border-radius: 4px;
   display: block;
   font-family: inherit;
@@ -47,39 +48,39 @@
   width: 100%;
 }
 
-.form-control input:focus {
+.formControl input:focus {
   outline: 0;
   border-color: var(--primaryLight);
 }
 
-.form-control.success input {
+.formControl.success input {
   border-color: #2ecc71;
 }
 
-.form-control.error input {
+.formControl.error input {
   border-color: var(--danger);
 }
 
-.form-control i {
+.formControl i {
   visibility: hidden;
   position: absolute;
   top: 40px;
   right: 10px;
 }
 
-.form-control.success i.fa-check-circle {
+.formControl.success i.fa-check-circle {
   color: var(--success);
   visibility: visible;
   font-size: 1.5rem;
 }
 
-.form-control.error i.fa-exclamation-circle {
+.formControl.error i.fa-exclamation-circle {
   color: var(--danger);
   visibility: visible;
   font-size: 1.5rem;
 }
 
-.form-control small {
+.formControl small {
   font-size: 1.25rem;
 
   color: var(--danger);
@@ -89,7 +90,7 @@
   visibility: hidden;
 }
 
-.form-control.error small {
+.formControl.error small {
   visibility: visible;
 }
 
