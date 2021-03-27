@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
+
+.formContainer {
+  background-color: #fff;
+  border: 0.1rem solid var(--primaryScroll);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.formHeader {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: var(--thirdPrimary1);
+  color: var(--primaryBgLight);
+  padding: 20px 40px;
+}
+
+.formHeader h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 1.75rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: var(--primaryLight);
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: var(--danger);
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: var(--success);
+  visibility: visible;
+  font-size: 1.5rem;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: var(--danger);
+  visibility: visible;
+  font-size: 1.5rem;
+}
+
+.form-control small {
+  font-size: 1.25rem;
+
+  color: var(--danger);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.formButton {
+  margin: 0rem 0rem;
+}

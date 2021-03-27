@@ -650,7 +650,7 @@
             content.
           </p>
         </div>
-        <div class="content alignCenter" id="alignCenter">
+        <div class="content alignCenter">
           <button class="btn btnSolidPrimary modalTrigger">Show Modal</button>
           <div class="modalBg">
             <div class="modal">
@@ -664,7 +664,7 @@
               </div>
               <div class="modalFooter">
                 <button class="btn btnOutlinedSecondary modalBtn cancelBtn">Cancel</button>
-                <button class="btn btnSolidPrimary modalBtn deleteBtn success">Delete</button>
+                <button class="btn btnSolidPrimary modalBtn deleteBtn delMessg">Delete</button>
               </div>
 
             </div>
@@ -673,16 +673,51 @@
         <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
+                  <button class="btn btnSolidPrimary modalTrigger">Show Modal</button>
+                  <div class="modalBg">
+                    <div class="modal">
+                      <div class="modalHead">
+                        <h1>Delete record(s)?</h1>
+                        <button class="btn btnIcon crossBtn"><i class="fas fa-times"></i></button>
+                      </div>
+                      <div class="modalContent">
+                        <p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+                        <p>Are you sure you want to permanently delete them?</p>
+                      </div>
+                      <div class="modalFooter">
+                        <button class="btn btnOutlinedSecondary modalBtn cancelBtn">Cancel</button>
+                        <button class="btn btnSolidPrimary modalBtn deleteBtn success">Delete</button>
+                      </div>
+        
                     </div>
-                </div>
+                  </div>
+                </xmp>
+              </code> 
+            </pre>
+        <pre>
+              <code class="language-javascript" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  var modalTrig = document.querySelector(".modalTrigger");
+                  var modalBg = document.querySelector(".modalBg");
+                  var deleteBtn = document.querySelector(".deleteBtn");
+                  var cancelBtn = document.querySelector(".cancelBtn");
+                  var crossBtn = document.querySelector(".crossBtn");
+                  
+                  modalTrig.addEventListener("click", () => {
+                    modalBg.classList.add("bgActive");
+                  });
+                  
+                  deleteBtn.addEventListener("click", () => {
+                    modalBg.classList.remove("bgActive");
+                  });
+                  
+                  cancelBtn.addEventListener("click", () => {
+                    modalBg.classList.remove("bgActive");
+                  });
+                  
+                  crossBtn.addEventListener("click", () => {
+                    modalBg.classList.remove("bgActive");
+                  });
                 </xmp>
               </code> 
             </pre>
@@ -996,8 +1031,46 @@
             content.
           </p>
         </div>
-        <div class="content">
-          <h1>content</h1>
+        <div class="content alignCenter">
+          <div class="formContainer">
+            <div class="formHeader">
+              <h2>Create Account</h2>
+            </div>
+            <form id="form" class="form">
+              <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="youteee280" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="a@florin-pop.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="username">Password check</label>
+                <input type="password" placeholder="Password two" id="password2" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <button class="btn btnSolid btnSolidPrimary formButton">Submit</button>
+            </form>
+          </div>
+
+
+
         </div>
         <pre>
           <code class="language-html" data-prismjs-copy="Copy" class="code">
