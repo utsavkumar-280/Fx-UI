@@ -12,12 +12,11 @@
 @import "./ComponentsStyles/toasts.css";
 
 @import "./ComponentsStyles/forms/formControl.css";
-@import "./ComponentsStyles/forms/badge.css";
-@import "./ComponentsStyles/forms/checkRadios.css";
-@import "./ComponentsStyles/forms/floatingLabel.css";
-@import "./ComponentsStyles/forms/inputGroup.css";
-@import "./ComponentsStyles/forms/range.css";
+@import "./ComponentsStyles/forms/fileInput.css";
 @import "./ComponentsStyles/forms/selects.css";
+@import "./ComponentsStyles/forms/dataList.css";
+@import "./ComponentsStyles/forms/checkRadios.css";
+@import "./ComponentsStyles/forms/range.css";
 
 @import "./ComponentsStyles/content/images.css";
 @import "./ComponentsStyles/content/typography.css";
