@@ -218,6 +218,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .alignCenter {
   align-items: center;
@@ -228,13 +229,15 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 #flexRow {
-  height: 15vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .contentContainer {
   padding: 1rem 0 4rem 0;

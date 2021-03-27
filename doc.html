@@ -44,16 +44,15 @@
         <h2>Forms</h2>
         <ul>
           <li><a href="#mainFormControl"> Form Control</a></li>
+          <li><a href="#mainFileInput"> File Input</a></li>
           <li><a href="#mainSelects"> Selects</a></li>
-          <li><a href="#mainBadge"> Badge</a></li>
+          <li><a href="#mainDataList">DataLists</a></li>
           <li><a href="#mainCheckRadios"> Check and radios</a></li>
           <li><a href="#mainRange"> Range</a></li>
-          <li><a href="#mainInputGroup"> Input group</a></li>
-          <li><a href="#mainFloatingLables"> Floating Lables</a></li>
+          <li><a href="#mainFormValidation">Form Validation</a></li>
         </ul>
         <h2>Content</h2>
         <ul>
-          <li><a href="#mainImages"> Images</a></li>
           <li><a href="#mainTypography"> Typography</a></li>
         </ul>
       </div>
@@ -579,25 +578,25 @@
             <div class="dropItem">
               Home
               <div class="dropItemGroup">
-                <a href="#" class="dropItem">Home1</a>
-                <a href="#" class="dropItem">Home2</a>
-                <a href="#" class="dropItem">Home3</a>
+                <a href="#" class="dropItem">Link</a>
+                <a href="#" class="dropItem">Cart</a>
+                <a href="#" class="dropItem">Bill</a>
               </div>
             </div>
             <div class="dropItem">
-              Video Tutorials
+              Tutorials
               <div class="dropItemGroup">
                 <a href="#" class="dropItem">HTML</a>
                 <a href="#" class="dropItem">CSS</a>
-                <a href="#" class="dropItem">JavaScript</a>
+                <a href="#" class="dropItem">JS</a>
               </div>
             </div>
             <div class="dropItem">
               About
               <div class="dropItemGroup">
-                <a href="#" class="dropItem">About1</a>
-                <a href="#" class="dropItem">About2</a>
-                <a href="#" class="dropItem">About3</a>
+                <a href="#" class="dropItem">Head</a>
+                <a href="#" class="dropItem">Body</a>
+                <a href="#" class="dropItem">Foot</a>
               </div>
             </div>
           </div>
@@ -651,8 +650,25 @@
             content.
           </p>
         </div>
-        <div class="content">
-          <h1>content</h1>
+        <div class="content alignCenter" id="alignCenter">
+          <button class="btn btnSolidPrimary modalTrigger">Show Modal</button>
+          <div class="modalBg">
+            <div class="modal">
+              <div class="modalHead">
+                <h1>Delete record(s)?</h1>
+                <button class="btn btnIcon crossBtn"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="modalContent">
+                <p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+                <p>Are you sure you want to permanently delete them?</p>
+              </div>
+              <div class="modalFooter">
+                <button class="btn btnOutlinedSecondary modalBtn cancelBtn">Cancel</button>
+                <button class="btn btnSolidPrimary modalBtn deleteBtn success">Delete</button>
+              </div>
+
+            </div>
+          </div>
         </div>
         <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
@@ -671,6 +687,7 @@
               </code> 
             </pre>
       </section>
+
 
       <!-- Toasts -->
       <section class="contentContainer">
@@ -749,10 +766,15 @@
     </pre>
       </section>
 
-      <!-- Images -->
+
+
+
+      <!-- Forms -->
+
+      <!-- Form Control -->
       <section class="contentContainer">
-        <div id="mainImages" class="container">
-          <h1>Images</h1>
+        <div id="mainFormControl" class="container">
+          <h1>Form Control</h1>
           <h3>
             Displays collapsible content panels for presenting information in
             a limited amount of space.
@@ -783,6 +805,219 @@
               </code> 
             </pre>
       </section>
+
+      <section class="contentContainer">
+        <div id="mainFileInput" class="container">
+          <h1>File Input</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <div class="accordion">
+                    <div>
+                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
+                        <label for="section1" class="accordionLabel">Section 1</label>
+                        <div class="accordionContent">
+                            <p>Section 1</p>
+                            <p>Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+
+      <!-- Selects -->
+      <section class="contentContainer">
+        <div id="mainSelects" class="container">
+          <h1>Select</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <div class="accordion">
+                    <div>
+                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
+                        <label for="section1" class="accordionLabel">Section 1</label>
+                        <div class="accordionContent">
+                            <p>Section 1</p>
+                            <p>Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+
+      <!-- Selects -->
+      <section class="contentContainer">
+        <div id="mainDataList" class="container">
+          <h1>DataList</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <div class="accordion">
+                    <div>
+                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
+                        <label for="section1" class="accordionLabel">Section 1</label>
+                        <div class="accordionContent">
+                            <p>Section 1</p>
+                            <p>Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Check and Radios -->
+      <section class="contentContainer">
+        <div id="mainCheckRadios" class="container">
+          <h1>Check and Radios</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <div class="accordion">
+                    <div>
+                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
+                        <label for="section1" class="accordionLabel">Section 1</label>
+                        <div class="accordionContent">
+                            <p>Section 1</p>
+                            <p>Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Range -->
+      <section class="contentContainer">
+        <div id="mainRange" class="container">
+          <h1>Range</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <div class="accordion">
+                    <div>
+                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
+                        <label for="section1" class="accordionLabel">Section 1</label>
+                        <div class="accordionContent">
+                            <p>Section 1</p>
+                            <p>Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Form Validation -->
+      <section class="contentContainer">
+        <div id="mainFormValidation" class="container">
+          <h1>Form Validation</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="content">
+          <h1>content</h1>
+        </div>
+        <pre>
+          <code class="language-html" data-prismjs-copy="Copy" class="code">
+             <xmp>
+                 <div class="accordion">
+                    <div>
+                       <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
+                        <label for="section1" class="accordionLabel">Section 1</label>
+                         <div class="accordionContent">
+                            <p>Section 1</p>
+                             <p>Lorem ipsum dolor sit ...</p>
+                          </div>
+                       </div>
+                    </div>
+                 </xmp>
+             </code> 
+                  </pre>
+      </section>
+
+
 
       <!-- Typography -->
       <section class="contentContainer">

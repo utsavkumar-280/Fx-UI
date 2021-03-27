@@ -50,3 +50,26 @@ setInterval(function () {
     counter = 1;
   }
 }, 5000);
+
+//Modal Button
+var modalTrig = document.querySelector(".modalTrigger");
+var modalBg = document.querySelector(".modalBg");
+var deleteBtn = document.querySelector(".deleteBtn");
+var cancelBtn = document.querySelector(".cancelBtn");
+var crossBtn = document.querySelector(".crossBtn");
+
+modalTrig.addEventListener("click", () => {
+  modalBg.classList.add("bgActive");
+});
+
+deleteBtn.addEventListener("click", () => {
+  modalBg.classList.remove("bgActive");
+});
+
+cancelBtn.addEventListener("click", () => {
+  modalBg.classList.remove("bgActive");
+});
+
+crossBtn.addEventListener("click", () => {
+  modalBg.classList.remove("bgActive");
+});

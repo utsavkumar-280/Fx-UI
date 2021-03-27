@@ -96,6 +96,7 @@
   color: var(--thirdPrimary1);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem;
+  margin: 0;
   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 .btnIconPrimary:hover .btnIcon {
@@ -106,6 +107,7 @@
   color: var(--primaryLighter);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem;
+  margin: 0;
   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 .btnIconSecondary:hover .btnIcon {
