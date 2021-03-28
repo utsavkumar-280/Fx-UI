@@ -895,16 +895,16 @@
         <pre>
               <code class="language-html" data-prismjs-copy="Copy" class="code">
                 <xmp>
-                <div class="accordion">
-                    <div>
-                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
-                        <label for="section1" class="accordionLabel">Section 1</label>
-                        <div class="accordionContent">
-                            <p>Section 1</p>
-                            <p>Lorem ipsum dolor sit ...</p>
-                        </div>
-                    </div>
-                </div>
+                  <div class="formControl">
+                    <label for="myColor">Enter a color:</label>
+                    <input type="text" name="myColor" id="myColor" list="colorList">
+                    <datalist id="colorList">
+                      <option value="#FF0000">Red</option>
+                      <option value="#008000">Green</option>
+                      <option value="#FF00FF">Fuchsia</option>
+                      <option value="#008080">Teal</option>
+                    </datalist>
+                  </div>
                 </xmp>
               </code> 
             </pre>
