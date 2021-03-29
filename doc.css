@@ -48,7 +48,7 @@ html {
 .mainHeader {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: var(--primaryBgLight);
   padding: 1rem;
   min-height: 7vh;
@@ -81,7 +81,7 @@ html {
 .sidebar {
   position: sticky;
   top: 7vh;
-  z-index: 1;
+  z-index: 2;
   height: 93vh;
   overflow-y: scroll;
   grid-area: sidebar;
@@ -224,7 +224,7 @@ html {
 .alignCenter {
   align-items: center;
 }
-#vh50 {
+.vh50 {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -232,7 +232,7 @@ html {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-#flexRow {
+.flexRow {
   height: 30vh;
   display: flex;
   flex-direction: row;

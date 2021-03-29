@@ -1,6 +1,6 @@
 .toast {
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   font-size: 2rem;
   font-weight: 500;
   right: 0rem;
