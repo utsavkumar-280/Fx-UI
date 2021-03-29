@@ -11,7 +11,7 @@
 
 .formHeader {
   border-bottom: 0.1rem solid #f0f0f0;
-  background-color: var(--thirdPrimary1);
+  background-color: var(--thirdPrimaryLight);
   color: var(--primaryBgLight);
   padding: 2rem 4rem;
 }
@@ -53,7 +53,7 @@
 }
 
 .formControl.success input {
-  border-color: var(--thirdPrimary1);
+  border-color: var(--thirdPrimaryLight);
 }
 
 .formControl.error input {
@@ -68,7 +68,7 @@
 }
 
 .formControl.success i.fa-check-circle {
-  color: var(--thirdPrimary1);
+  color: var(--thirdPrimaryLight);
   visibility: visible;
   font-size: 1.5rem;
 }

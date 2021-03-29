@@ -37,7 +37,7 @@
   color: var(--primaryBgLight);
 }
 .modalHead {
-  background-color: var(--thirdPrimary1);
+  background-color: var(--thirdPrimaryLight);
   color: var(--primaryBgLight);
   padding: 2rem;
   border-radius: 0.5rem 0.5rem 0 0;

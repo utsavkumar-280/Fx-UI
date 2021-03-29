@@ -12,7 +12,7 @@
   background-color: var(--primaryLight);
 }
 .badgePrimary {
-  background-color: var(--thirdPrimary1);
+  background-color: var(--thirdPrimaryLight);
 }
 .badgePill {
   border-radius: 5rem;

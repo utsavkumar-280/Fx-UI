@@ -17,7 +17,7 @@
   text-align: center;
   padding: 0.75rem 1.5rem;
   font-size: 1.75rem;
-  background: var(--thirdPrimary1);
+  background: var(--thirdPrimaryLight);
   color: var(--primaryBgLight);
   cursor: pointer;
   transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;

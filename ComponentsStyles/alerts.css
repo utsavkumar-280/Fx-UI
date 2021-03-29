@@ -10,7 +10,7 @@
 }
 
 .alertPrimary {
-  background-color: var(--thirdPrimary1);
+  background-color: var(--thirdPrimaryLight);
   color: var(--primaryBgLight);
 }
 
