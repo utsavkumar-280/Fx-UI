@@ -48,7 +48,7 @@ html {
 .mainHeader {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   background-color: var(--primaryBgLight);
   padding: 1rem;
   min-height: 7vh;
@@ -81,7 +81,7 @@ html {
 .sidebar {
   position: sticky;
   top: 7vh;
-  z-index: 2;
+  z-index: 1;
   height: 93vh;
   overflow-y: scroll;
   grid-area: sidebar;

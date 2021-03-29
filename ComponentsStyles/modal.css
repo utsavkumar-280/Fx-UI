@@ -1,5 +1,5 @@
 .modalBg {
-  z-index: 6;
+  z-index: 5;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -20,6 +20,7 @@
 }
 
 .modal {
+  z-index: 5;
   background-color: white;
   width: 50vh;
   height: 30vh;
