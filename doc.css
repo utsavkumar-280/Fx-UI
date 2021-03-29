@@ -172,8 +172,6 @@ html {
 /* Handle */
 .mainContentContainer::-webkit-scrollbar-thumb {
   background: var(--primaryScroll);
-
-  /* border-radius: 1rem; */
 }
 
 /* Handle on hover */
@@ -257,15 +255,10 @@ pre {
   opacity: 0;
 }
 
-/* #menu {
-  visibility: hidden;
-  opacity: 0;
-} */
-
 /* responsive */
 @media only screen and (max-width: 1240px) {
   .mainPageLayout {
-    width: 85vw;
+    width: 85%;
     margin: 0 7.5vw;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -278,7 +271,7 @@ pre {
 @media only screen and (max-width: 940px) {
   .mainPageLayout {
     margin: 0 5vw;
-    width: 90vw;
+    width: 90%;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-areas:
@@ -290,7 +283,7 @@ pre {
 @media only screen and (max-width: 768px) {
   .mainPageLayout {
     margin: 0;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-areas:
@@ -306,7 +299,7 @@ pre {
 @media only screen and (max-width: 640px) {
   .mainPageLayout {
     margin: 0;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-areas:
