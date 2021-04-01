@@ -298,10 +298,6 @@ pre {
 }
 
 @media only screen and (max-width: 640px) {
-  /* .mainHeader {
-    height: 7vh;
-    padding: 3rem 1rem;
-  } */
   .mainPageLayout {
     margin: 0;
     width: 100%;
@@ -314,10 +310,10 @@ pre {
   .mainContentContainer {
     padding: 0.5rem 1rem;
     grid-area: mainContentContainer;
-    height: 90vh;
+    height: 93vh;
   }
   .mainHeader {
-    height: 10vh;
+    height: 7vh;
   }
   .sidebar {
     z-index: 5;
