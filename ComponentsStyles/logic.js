@@ -73,11 +73,22 @@ crossBtn.addEventListener("click", () => {
 //Menu Sidebar
 var menuVar = document.querySelector("#menu");
 var sideBar = document.querySelector(".sidebar");
+var sideClickers = document.querySelectorAll(".sideClicks");
 
 if (menuVar && sideBar) {
   menuVar.addEventListener("click", () => {
     sideBar.classList.toggle("sidebarActive");
     menuVar.classList.toggle("fa-times");
+  });
+}
+
+for (const sideClicker of sideClickers) {
+  sideClicker.addEventListener("click", () => {
+    console.log("clicked sideClicler");
+    sideBar.classList.remove("sidebarActive");
+    console.log(sideBar.classList);
+    menuVar.classList.toggle("fa-times");
+    console.log(menuVar.classList);
   });
 }
 

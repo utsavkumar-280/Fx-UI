@@ -48,16 +48,16 @@ html {
 .mainHeader {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   background-color: var(--primaryBgLight);
+
   padding: 1rem;
-  min-height: 7vh;
+  height: 7vh;
   border-bottom: 0.01rem solid var(--divider);
   display: flex;
   justify-content: space-between;
   align-items: center;
   grid-area: mainHeader;
-  /* visibility: hidden; */
 }
 
 .logoContainer > a {
@@ -314,6 +314,10 @@ pre {
   .mainContentContainer {
     padding: 0.5rem 1rem;
     grid-area: mainContentContainer;
+    height: 90vh;
+  }
+  .mainHeader {
+    height: 10vh;
   }
   .sidebar {
     z-index: 5;
