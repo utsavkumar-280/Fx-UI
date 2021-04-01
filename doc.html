@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./prism/prismLucario.css" />
+  <link rel="stylesheet" href="./doc.css" />
+  <title>Fx UI</title>
+</head>
+
+<body>
+  <div class="mainPageLayout">
+    <header class="mainHeader">
+      <div class="logoContainer">
+        <a href="./index.html"><img src="./assets/flash.svg" alt="#" />
+          <div>Fx UI</div>
+
+        </a>
+      </div>
+      <button class="btn btnIconSecondary menuBtn"><span class="btnIcon"><i class="fas fa-bars"
+            id="menu"></i></span></button>
+
+    </header>
+
+    <nav class="sidebar">
+      <div class="scrollContainer">
+        <h2>Getting Started</h2>
+        <ul>
+          <li><a href="#intro" class="sideClicks">Installation</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+          <li><a href="#mainAccordian" class="sideClicks"> Accordian</a></li>
+          <li><a href="#mainAlerts" class="sideClicks"> Alerts</a></li>
+          <li><a href="#mainBadge" class="sideClicks"> Badge</a></li>
+          <li><a href="#mainBreadcrumb" class="sideClicks"> Breadcrumb</a></li>
+          <li><a href="#mainButtons" class="sideClicks"> Buttons</a></li>
+          <li><a href="#mainCarousel" class="sideClicks"> Carousel</a></li>
+          <li><a href="#mainDropdowns" class="sideClicks"> Dropdowns</a></li>
+          <li><a href="#mainModal" class="sideClicks"> Modal</a></li>
+          <li><a href="#mainToasts" class="sideClicks"> Toasts</a></li>
+        </ul>
+        <h2>Forms</h2>
+        <ul>
+          <li><a href="#mainFormControl" class="sideClicks"> Form Control</a></li>
+          <li><a href="#mainFileInput" class="sideClicks"> File Input</a></li>
+          <li><a href="#mainSelect" class="sideClicks"> Select</a></li>
+          <li><a href="#mainDataList" class="sideClicks">DataList</a></li>
+          <li><a href="#mainCheckRadios" class="sideClicks"> Check and radios</a></li>
+          <li><a href="#mainRange" class="sideClicks"> Range</a></li>
+          <li><a href="#mainFormValidation" class="sideClicks">Form Validation</a></li>
+        </ul>
+        <h2>Content</h2>
+        <ul>
+          <li><a href="#mainTypography" class="sideClicks"> Typography</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="mainContentContainer">
+      <section class="contentContainer">
+        <div id="intro" class="container">
+          <h1>Installation</h1>
+          <h3>
+            Copy-paste the stylesheet <code>&lt;link&gt;</code> into your
+            <code>&lt;head&gt;</code> before all other stylesheets to load our
+            CSS.
+          </h3>
+          <pre>
+                <code class="language-html" data-prismjs-copy="Copy" class="code">
+                    <xmp>
+                      <link rel="stylesheet" href="https://fx-ui.netlify.app/componentsMain.css">  
+                    </xmp>
+                </code> 
+            </pre>
+          <h3>
+            This is the <code>&lt;script&gt;</code> file that will provide all the logic required by the components.
+          </h3>
+          <pre>
+            <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp> 
+                  <script src="https://fx-ui.netlify.app/ComponentsStyles/logic.js"></script>
+                </xmp>
+            </code> 
+        </pre>
+
+        </div>
+      </section>
+      <section class="contentContainer">
+        <div id="mainAccordian" class="container">
+          <h1>Accordian</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Example</h2>
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+          <div class="content">
+            <div class="accordion">
+              <div>
+                <input type="checkbox" name="example_accordion" id="section1" class="accordionInput" />
+                <label for="section1" class="accordionLabel">Section 1</label>
+                <div class="accordionContent">
+                  <p>Section 1</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam sit reiciendis, ipsam quaerat, aperiam
+                    perspiciatis ad ullam architecto impedit natus illo
+                    nostrum molestias voluptas earum a voluptatibus fugiat
+                    fuga facere!
+                  </p>
+                </div>
+              </div>
+              <div>
+                <input type="checkbox" name="example_accordion" id="section2" class="accordionInput" />
+                <label for="section2" class="accordionLabel">Section 2</label>
+                <div class="accordionContent">
+                  <p>Section 2</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam sit reiciendis, ipsam quaerat, aperiam
+                    perspiciatis ad ullam architecto impedit natus illo
+                    nostrum molestias voluptas earum a voluptatibus fugiat
+                    fuga facere!
+                  </p>
+                </div>
+              </div>
+              <div>
+                <input type="checkbox" name="example_accordion" id="section3" class="accordionInput" />
+                <label for="section3" class="accordionLabel">Section 3</label>
+                <div class="accordionContent">
+                  <p>Section 3</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam sit reiciendis, ipsam quaerat, aperiam
+                    perspiciatis ad ullam architecto impedit natus illo
+                    nostrum molestias voluptas earum a voluptatibus fugiat
+                    fuga facere!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <div class="accordion">
+                    <div>
+                        <input type="checkbox" name="example_accordion" id="section1" class="accordionInput">
+                        <label for="section1" class="accordionLabel">Section 1</label>
+                        <div class="accordionContent">
+                            <p>Section 1</p>
+                            <p>Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+        </div>
+      </section>
+      <section class="contentContainer">
+        <div id="mainAlerts" class="container">
+          <h1>Alerts</h1>
+          <h3>
+            Provide contextual feedback messages for typical user actions with
+            the handful of available and flexible alert messages.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Alerts are available in 8 types-
+            primary,secondary,success,danger,warning,info,light,dark.
+          </p>
+          <p>
+            You can use alert by adding the class <strong>.alert</strong> along with alert
+            type class name (ie. <strong>class="alert secondary</strong> ")
+          </p>
+        </div>
+        <div class="content">
+          <div class="alert alertPrimary">A simple primary alert!</div>
+          <div class="alert alertSecondary">A simple secondary alert!</div>
+          <div class="alert alertSuccess">A simple success alert!</div>
+          <div class="alert alertDanger">A simple danger alert!</div>
+          <div class="alert alertWarning">A simple warning alert!</div>
+          <div class="alert alertInfo">A simple info alert!</div>
+          <div class="alert alertLight">A simple light alert!</div>
+          <div class="alert alertDark">A simple dark alert!</div>
+        </div>
+        <pre>
+                <code class="language-html" data-prismjs-copy="Copy" class="code">
+                    <xmp>
+                    <div class="alert alertPrimary">A simple primary alert!</div>
+                    <div class="alert alertSecondary">A simple secondary alert!</div>
+                    <div class="alert alertSuccess">A simple success alert.</div>
+                    <div class="alert alertDanger">A simple danger alert!</div>
+                    <div class="alert alertWarning">A simple warning alert!</div>
+                    <div class="alert alertInfo">A simple info alert.</div>
+                    <div class="alert alertLight">A simple light alert!</div>
+                    <div class="alert alertDark">A simple dark alert!</div>
+                    </xmp>
+                </code> 
+                </pre>
+      </section>
+      <section class="contentContainer">
+        <div id="mainBadge" class="container">
+          <h1>Badges</h1>
+          <h3>
+            Badges can notify you that there are new or unread messages or
+            notifications.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            Badges scale to match the size of the immediate parent element by using relative font sizing.
+          </p>
+        </div>
+        <div class="content">
+          <h1>Example Heading <span class="badge badgePrimary">New</span></h1>
+          <h2>
+            Example Heading <span class="badge badgeSecondary">New</span>
+          </h2>
+          <h3>Example Heading <span class="badge badgePrimary">New</span></h3>
+          <h4>
+            Example Heading <span class="badge badgeSecondary">New</span>
+          </h4>
+          <h5>Example Heading <span class="badge badgePrimary">New</span></h5>
+          <h6>
+            Example Heading <span class="badge badgeSecondary">New</span>
+          </h6>
+          <p>
+            Example Paragraph
+            <span class="badge badgePrimary badgePill">New</span>
+          </p>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <h1>Example Heading <span class="badge badgePrimary">New</span></h1>
+                <h2>Example Heading <span class="badge badgeSecondary">New</span></h2>
+                <h3>Example Heading <span class="badge badgePrimary">New</span></h3>
+                <h4>Example Heading <span class="badge badgeSecondary">New</span></h4>
+                <h5>Example Heading <span class="badge badgePrimary">New</span></h5>
+                <h6>Example Heading <span class="badge badgeSecondary">New</span></h6>
+                <p>Example Paragraph<span class="badge badgePrimary badgePill">New</span></p>        
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Breadcrumbs -->
+      <section class="contentContainer">
+        <div id="mainBreadcrumb" class="container">
+          <h1>Breadcrumb</h1>
+          <h3>
+            Breadcrumbs are a good way to display your current location. This
+            is usually used when you have multiple layers of content.It is
+            used to indicate the current page’s location within a navigational
+            hierarchy
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            There are two variants of Breadcrumbs.
+          </p>
+          <p>
+            One has <strong>"forward slash"</strong> as the seperator and the other one has a <strong>"greater
+              than"</strong> symbol.
+          </p>
+        </div>
+        <div class="content">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem">About</li>
+          </ul>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem">
+              <a href="#" class="breadcrumbsLink">About</a>
+            </li>
+            <li class="breadcrumbsItem">Profile</li>
+          </ul>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbsItem">
+                            <a href="#" class="breadcrumbsLink">Home</a>
+                        </li>
+                        <li class="breadcrumbsItem">About</li>
+                        </ul>
+                        <ul class="breadcrumbs">
+                        <li class="breadcrumbsItem">
+                            <a href="#" class="breadcrumbsLink">Home</a>
+                        </li>
+                        <li class="breadcrumbsItem">
+                            <a href="#" class="breadcrumbsLink">About</a>
+                        </li>
+                        <li class="breadcrumbsItem">Profile</li>
+                    </ul>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+
+        <!-- arrowBreadcrumbs -->
+        <div class="content">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem arrow">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem arrow">About</li>
+          </ul>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbsItem arrow">
+              <a href="#" class="breadcrumbsLink">Home</a>
+            </li>
+            <li class="breadcrumbsItem arrow">
+              <a href="#" class="breadcrumbsLink">About</a>
+            </li>
+            <li class="breadcrumbsItem arrow">Profile</li>
+          </ul>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbsItem arrow">
+                            <a href="#" class="breadcrumbsLink">Home</a>
+                        </li>
+                        <li class="breadcrumbsItem arrow">About</li>
+                    </ul>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbsItem arrow">
+                            <a href="#" class="breadcrumbsLink">Home</a>
+                        </li>
+                        <li class="breadcrumbsItem arrow">
+                            <a href="#" class="breadcrumbsLink">About</a>
+                        </li>
+                        <li class="breadcrumbsItem arrow">Profile</li>
+                    </ul>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Buttons -->
+      <section class="contentContainer">
+        <div id="mainButtons" class="container">
+          <h1>Buttons</h1>
+          <h3>
+            Displays collapsible content panels for presenting information in
+            a limited amount of space.
+          </h3>
+          <h2>Primary Buttons</h2>
+          <p>
+            There are five variations of a standard sized primary buttons i.e <strong>Solid</strong>,
+            <strong>Outlined</strong>, <strong>Text</strong>, <strong>TextIcon</strong>.
+          </p>
+        </div>
+        <div class="content flexRow">
+          <button class="btn btnSolidPrimary">Primary Solid</button>
+          <button class="btn btnOutlinedPrimary">Primary Outlined</button>
+          <button class="btnText btnTextPrimary">Primary Text</button>
+          <button class="btn btnIconPrimary"><span class="btnIcon"><i class="fas fa-bookmark"></i></span></button>
+          <button class="btn btnTextIconPrimary"><span class="btnIcon"><i
+                class="far fa-bookmark"></i></span>Bookmark</button>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <button class="btn btnSolidPrimary">Primary Solid</button>
+                  <button class="btn btnOutlinedPrimary">Primary Outlined</button>
+                  <button class="btnText btnTextPrimary">Primary Text</button>
+                  <button class="btn btnIconPrimary"><span class="btnIcon"><i class="fas fa-bookmark"></i></span></button>
+                  <button class="btn btnTextIconPrimary"><span class="btnIcon"><i class="far fa-bookmark"></i></span>Bookmark</button>
+                </xmp>
+              </code> 
+            </pre>
+        <div class="container">
+          <h2>Secondary Buttons</h2>
+          <p>
+            There are five variations of a standard sized secondary buttons also i.e <strong>Solid</strong>,
+            <strong>Outlined</strong>, <strong>Text</strong>, <strong>TextIcon</strong>.
+          </p>
+        </div>
+        <div class="content flexRow">
+          <button class="btn btnSolidSecondary">Secondary Solid</button>
+          <button class="btn btnOutlinedSecondary">Secondary Outlined</button>
+          <button class="btnText btnTextSecondary">Secondary Text</button>
+          <button class="btn btnIconSecondary"><span class="btnIcon"><i class="fas fa-bookmark"></i></span></button>
+          <button class="btn btnTextIconSecondary"><span class="btnIcon"><i
+                class="far fa-bookmark"></i></span>Bookmark</button>
+        </div>
+        <pre>
+                  <code class="language-html" data-prismjs-copy="Copy" class="code">
+                    <xmp>
+                      <button class="btn btnSolidSecondary">Secondary Solid</button>
+                      <button class="btn btnOutlinedSecondary">Secondary Outlined</button>
+                      <button class="btnText btnTextSecondary">Secondary Text</button>
+                      <button class="btn btnIconSecondary"><span class="btnIcon"><i class="fas fa-bookmark"></i></span></button>
+                      <button class="btn btnTextIconSecondary"><span class="btnIcon"><i class="far fa-bookmark"></i></span>Bookmark</button>
+                    </xmp>
+                  </code> 
+                </pre>
+      </section>
+
+
+
+      <!-- Carousel -->
+      <section class="contentContainer">
+        <div id="mainCarousel" class="container">
+          <h1>Carousel</h1>
+          <h3>
+            A slideshow component for cycling through elements-images or slides of text-like a carousel.
+          </h3>
+        </div>
+        <div class="content">
+          <div id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+            <label for="s1" id="slide1">
+              <img src="./assets/img1.jpg" height="100%" width="100%">
+            </label>
+            <label for="s2" id="slide2">
+              <img src="./assets/img2.jpg" height="100%" width="100%">
+            </label>
+            <label for="s3" id="slide3">
+              <img src="./assets/img3.jpg" height="100%" width="100%">
+            </label>
+            <label for="s4" id="slide4">
+              <img src="./assets/img4.jpg" height="100%" width="100%">
+            </label>
+            <label for="s5" id="slide5">
+              <img src="./assets/img5.jpg" height="100%" width="100%">
+            </label>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html" data-prismjs-copy="Copy" class="code">
+            <xmp>
+                  <div id="slider">
+                    <input type="radio" name="slider" id="s1">
+                    <input type="radio" name="slider" id="s2">
+                    <input type="radio" name="slider" id="s3" checked>
+                    <input type="radio" name="slider" id="s4">
+                    <input type="radio" name="slider" id="s5">
+                    <label for="s1" id="slide1">
+                      <img src="./assets/img1.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s2" id="slide2">
+                      <img src="./assets/img2.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s3" id="slide3">
+                      <img src="./assets/img3.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s4" id="slide4">
+                      <img src="./assets/img4.jpg" height="100%" width="100%">
+                    </label>
+                    <label for="s5" id="slide5">
+                      <img src="./assets/img5.jpg" height="100%" width="100%">
+                    </label>
+                  </div>
+                </xmp>
+              </code> 
+        </pre>
+
+      </section>
+
+      <!-- Dropdowns -->
+      <section class="contentContainer">
+        <div id="mainDropdowns" class="container">
+          <h1>Dropdowns</h1>
+          <h3>
+            Dropdowns are toggleable, contextual overlays for displaying lists of links and more.They’re toggled by
+            hovering.
+          </h3>
+          <h2>Example</h2>
+        </div>
+        <div class="content vh50">
+          <div class="dropContainer">
+            <div class="dropItem">
+              Home
+              <div class="dropItemGroup">
+                <a href="#" class="dropItem">Link</a>
+                <a href="#" class="dropItem">Cart</a>
+                <a href="#" class="dropItem">Bill</a>
+              </div>
+            </div>
+            <div class="dropItem">
+              Tutorials
+              <div class="dropItemGroup">
+                <a href="#" class="dropItem">HTML</a>
+                <a href="#" class="dropItem">CSS</a>
+                <a href="#" class="dropItem">JS</a>
+              </div>
+            </div>
+            <div class="dropItem">
+              About
+              <div class="dropItemGroup">
+                <a href="#" class="dropItem">Head</a>
+                <a href="#" class="dropItem">Body</a>
+                <a href="#" class="dropItem">Foot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                    <div class="dropContainer">
+                        <div class="dropItem">
+                            Home
+                            <div class="dropItemGroup">
+                                <a href="#" class="dropItem">Home1</a>
+                                <a href="#" class="dropItem">Home2</a>
+                                <a href="#" class="dropItem">Home3</a>
+                            </div>
+                        </div>
+                        <div class="dropItem">
+                            Video Tutorials
+                            <div class="dropItemGroup">
+                                <a href="#" class="dropItem">HTML</a>
+                                <a href="#" class="dropItem">CSS</a>
+                                <a href="#" class="dropItem">JavaScript</a>
+                            </div>
+                        </div>
+                        <div class="dropItem">
+                            About
+                            <div class="dropItemGroup">
+                                <a href="#" class="dropItem">About1</a>
+                                <a href="#" class="dropItem">About2</a>
+                                <a href="#" class="dropItem">About3</a>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Modal -->
+      <section class="contentContainer">
+        <div id="mainModal" class="container">
+          <h1>Modal</h1>
+          <h3>
+            Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document.
+            Modals use <strong>position: fixed</strong> , so whenever possible, place your modal HTML in a top-level
+            position to avoid potential interference from other elements.
+          </h3>
+          <h2>Example</h2>
+          <p>
+            Toggle a working modal demo by clicking the button below. It will slide down and fade in from the center of
+            the page.
+          </p>
+        </div>
+        <div class="content alignCenter">
+          <button class="btn btnSolidPrimary modalTrigger">Show Modal</button>
+          <div class="modalBg">
+            <div class="modal">
+              <div class="modalHead">
+                <h1>Delete record(s)?</h1>
+                <button class="btn btnIcon crossBtn"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="modalContent">
+                <p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+                <p>Are you sure you want to permanently delete them?</p>
+              </div>
+              <div class="modalFooter">
+                <button class="btn btnOutlinedSecondary modalBtn cancelBtn">Cancel</button>
+                <button class="btn btnSolidPrimary modalBtn deleteBtn delMessg">Delete</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <button class="btn btnSolidPrimary modalTrigger">Show Modal</button>
+                  <div class="modalBg">
+                    <div class="modal">
+                      <div class="modalHead">
+                        <h1>Delete record(s)?</h1>
+                        <button class="btn btnIcon crossBtn"><i class="fas fa-times"></i></button>
+                      </div>
+                      <div class="modalContent">
+                        <p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+                        <p>Are you sure you want to permanently delete them?</p>
+                      </div>
+                      <div class="modalFooter">
+                        <button class="btn btnOutlinedSecondary modalBtn cancelBtn">Cancel</button>
+                        <button class="btn btnSolidPrimary modalBtn deleteBtn success">Delete</button>
+                      </div>
+        
+                    </div>
+                  </div>
+                </xmp>
+              </code> 
+            </pre>
+
+      </section>
+
+
+      <!-- Toasts -->
+      <section class="contentContainer">
+        <div id="mainToasts" class="container">
+          <h1>Toasts</h1>
+          <h3>
+            Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by
+            mobile and desktop operating systems.
+          </h3>
+          <h2>Examples</h2>
+          <p>
+            We have three variants of Toasts-<strong>success</strong>, <strong>warning</strong> and
+            <strong>danger</strong> .
+          </p>
+        </div>
+        <div class="content flexRow">
+          <button class="btn btnSolid btnSolidPrimary success">Show success</button>
+          <button class="btn btnSolid btnSolidPrimary warning">Show warning</button>
+          <button class="btn btnSolid btnSolidPrimary error">Show error</button>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <button class="success">Show success</button>
+                  <button class="warning">Show warning</button>
+                  <button class="error">Show error</button>
+                </xmp>
+              </code> 
+        </pre>
+      </section>
+
+
+
+
+      <!-- Forms -->
+
+      <!-- Form Control -->
+      <section class="contentContainer">
+        <div id="mainFormControl" class="container">
+          <h1>Form Control</h1>
+          <h3>
+            Forms are the standard way to receive user inputted data. Text fields allow user input.
+            <strong>.formControl</strong> can apply to all the required styling to the "div" element.
+          </h3>
+          <h2>Example</h2>
+          <p>
+            A simple input filed have three variations- <strong>normal</strong>, <strong>readonly</strong> and
+            <strong>disabled</strong> .
+          </p>
+        </div>
+        <div class="content">
+          <form class="form">
+            <div class="formControl">
+              <label for="username">Username</label>
+              <input type="text" placeholder="Normal Input" />
+            </div>
+            <div class="formControl">
+              <label for="username">Username</label>
+              <input type="text" placeholder="Readonly" readonly />
+            </div>
+            <div class="formControl">
+              <label for="username">Username</label>
+              <input type="text" placeholder="Disabled" disabled />
+            </div>
+          </form>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <form id="form" class="form">
+                    <div class="formControl">
+                      <label for="username">Username</label>
+                      <input type="text" placeholder="Normal Input" />
+                    </div>
+                    <div class="formControl">
+                      <label for="username">Username</label>
+                      <input type="text" placeholder="Readonly" readonly />
+                    </div>
+                    <div class="formControl">
+                      <label for="username">Username</label>
+                      <input type="text" placeholder="Disabled" disabled />
+                    </div>
+                  </form>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+
+      <!-- File Input -->
+      <section class="contentContainer">
+        <div id="mainFileInput" class="container">
+          <h1>File Input</h1>
+          <h2>Example</h2>
+          <p>
+            This is a customised file input/upload button.
+          </p>
+        </div>
+        <div class="content">
+          <div class="fileInputContainer ">
+            <input class="fileInput" type="file" name="myFile[]" id="myFile" multiple>
+            <button class="btn btnSolidPrimary fileInputButton" type="button">Choose File(s)</button>
+            <span class="fileInputLabel "></span>
+          </div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <div class="fileInputContainer ">
+                    <input class="fileInput" type="file" name="myFile[]" id="myFile" multiple>
+                    <button class="btn btnSolidPrimary fileInputButton" type="button">Choose File(s)</button>
+                    <span class="fileInputLabel "></span>
+                  </div>
+                </xmp>
+              </code> 
+            </pre>
+
+      </section>
+
+
+
+      <!-- Select -->
+      <section class="contentContainer">
+        <div id="mainSelect" class="container">
+          <h1>Select</h1>
+          <h3>
+            Select allows user input through specified options.
+          </h3>
+          <h2>Example</h2>
+        </div>
+        <div class="content alignCenter">
+          <select class="select">
+            <option disabled selected>Phone</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Nokia">Nokia</option>
+            <option value="Apple">Apple</option>
+            <option value="Honor">Honor</option>
+          </select>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <select class="select">
+                    <option disabled selected>Phone</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Nokia">Nokia</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Honor">Honor</option>
+                  </select>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+
+
+
+
+      <!-- DataLists -->
+      <section class="contentContainer">
+        <div id="mainDataList" class="container">
+          <h1>DataList</h1>
+          <h3>
+            Datalists allow you to create a group of <strong>option</strong> elements that can be accessed (and
+            autocompleted) from within an <strong>input</strong> element.
+          </h3>
+          <h2>Example</h2>
+        </div>
+        <div class="content flexRow">
+          <div class="formControl">
+            <label for="myColor">Enter a color:</label>
+            <input type="text" name="myColor" id="myColor" list="colorList">
+            <datalist id="colorList">
+              <option value="#FF0000">Red</option>
+              <option value="#008000">Green</option>
+              <option value="#FF00FF">Fuchsia</option>
+              <option value="#008080">Teal</option>
+            </datalist>
+          </div>
+
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <div class="formControl">
+                    <label for="myColor">Enter a color:</label>
+                    <input type="text" name="myColor" id="myColor" list="colorList">
+                    <datalist id="colorList">
+                      <option value="#FF0000">Red</option>
+                      <option value="#008000">Green</option>
+                      <option value="#FF00FF">Fuchsia</option>
+                      <option value="#008080">Teal</option>
+                    </datalist>
+                  </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Check and Radios -->
+      <section class="contentContainer">
+        <div id="mainCheckRadios" class="container">
+          <h1>Check and Radios</h1>
+          <h2>Radios</h2>
+          <h3>Radio Buttons are used when the user must make only one selection out of a group of items. </h3>
+
+          <h2>Example</h2>
+          <p>These radio buttons are customised according to our theme</p>
+        </div>
+        <div class="content alignCenter">
+          <div class="radioContainer">
+            <input type="radio" class="radioInput" value="Option1" id="meRadio1" name="meRadio">
+            <label for="meRadio1" class="radioLabel">Option1</label>
+
+            <input type="radio" class="radioInput" value="Option2" id="meRadio2" name="meRadio">
+            <label for="meRadio2" class="radioLabel">Option2</label>
+
+            <input type="radio" class="radioInput" value="Option3" id="meRadio3" name="meRadio">
+            <label for="meRadio3" class="radioLabel">Option3</label>
+          </div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <div class="radioContainer">
+                    <input type="radio" class="radioInput" value="Option1" id="meRadio1" name="meRadio">
+                    <label for="meRadio1" class="radioLabel">Option1</label>
+        
+                    <input type="radio" class="radioInput" value="Option2" id="meRadio2" name="meRadio">
+                    <label for="meRadio2" class="radioLabel">Option2</label>
+        
+                    <input type="radio" class="radioInput" value="Option3" id="meRadio3" name="meRadio">
+                    <label for="meRadio3" class="radioLabel">Option3</label>
+                  </div>
+                </xmp>
+              </code> 
+            </pre>
+        <div class="container">
+          <h2>Toggle Checkbox</h2>
+          <p>Use checkboxes when looking for yes or no answers.</p>
+        </div>
+        <div class="content">
+          <label class="toggle" for="myToggle">
+            <input class="toggleInput" name="" type="checkbox" id="myToggle">
+            <div class="toggleFill"></div>
+          </label>
+        </div>
+        <pre>
+                  <code class="language-html" data-prismjs-copy="Copy" class="code">
+                    <xmp>
+                      <label class="toggle" for="myToggle">
+                        <input class="toggleInput" name="" type="checkbox" id="myToggle">
+                        <div class="toggleFill"></div>
+                      </label>
+                    </xmp>
+                  </code> 
+                </pre>
+      </section>
+
+      <!-- Range -->
+      <section class="contentContainer">
+        <div id="mainRange" class="container">
+          <h1>Range</h1>
+          <h3>
+            Add a range slider for values with a wide range. This one is set to be a number between 0 and 100.
+          </h3>
+        </div>
+        <div class="content">
+          <div class="range">
+            <input type="range" min="0" max="100" value="20" oninput="rangeValue.innerText = this.value">
+            <p id="rangeValue">20</p>
+          </div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                  <div class="slider">
+                    <input type="range" min="0" max="100" value="20" oninput="rangeValue.innerText = this.value">
+                    <p id="rangeValue">20</p>
+                  </div>
+                </div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+
+      <!-- Form Validation -->
+      <section class="contentContainer">
+        <div id="mainFormValidation" class="container">
+          <h1>Form Validation</h1>
+          <h3>
+            Provide valuable, actionable feedback to your users with HTML5 form validation
+          </h3>
+          <h2>Example</h2>
+        </div>
+        <div class="content alignCenter">
+          <div class="formContainer">
+            <div class="formHeader">
+              <h2>Create Account</h2>
+            </div>
+            <form id="form" class="form">
+              <div class="formControl">
+                <label for="username">Username</label>
+                <input type="text" placeholder="youteee280" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="formControl">
+                <label for="username">Email</label>
+                <input type="email" placeholder="a@florin-pop.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="formControl">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="formControl">
+                <label for="username">Re-type Password</label>
+                <input type="password" placeholder="Password two" id="password2" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <button class="btn btnSolid btnSolidPrimary formButton">Submit</button>
+            </form>
+          </div>
+
+
+
+        </div>
+        <pre>
+          <code class="language-html" data-prismjs-copy="Copy" class="code">
+             <xmp>
+              <div class="formContainer">
+                <div class="formHeader">
+                  <h2>Create Account</h2>
+                </div>
+                <form id="form" class="form">
+                  <div class="formControl">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="youteee280" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                  </div>
+                  <div class="formControl">
+                    <label for="username">Email</label>
+                    <input type="email" placeholder="a@florin-pop.com" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                  </div>
+                  <div class="formControl">
+                    <label for="username">Password</label>
+                    <input type="password" placeholder="Password" id="password" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                  </div>
+                  <div class="formControl">
+                    <label for="username">Re-type Password</label>
+                    <input type="password" placeholder="Password two" id="password2" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                  </div>
+                  <button class="btn btnSolid btnSolidPrimary formButton">Submit</button>
+                </form>
+              </div>
+            </xmp>
+          </code> 
+        </pre>
+
+      </section>
+
+
+
+      <!-- Typography -->
+      <section class="contentContainer">
+        <div id="mainTypography" class="container">
+          <h1>Typography</h1>
+          <h3>
+            We provide some basic styling on header tags. In the example, you can see the the 6 header tags' different
+            sizes.
+          </h3>
+          <h2>Sizes</h2>
+        </div>
+        <div class="content">
+          <div class="h1">Example Heading1</div>
+          <div class="h2">Example Heading2</div>
+          <div class="h3">Example Heading3</div>
+          <div class="h4">Example Heading3</div>
+          <div class="h5">Example Heading5</div>
+          <div class="h6">Example Heading6</div>
+          <div class="p">Example Paragraph</div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <h1>Example Heading1</h1>
+                <h2>Example Heading2</h2>
+                <h3>Example Heading3</h3>
+                <h4>Example Heading4</h4>
+                <h5>Example Heading5</h5>
+                <h6>Example Heading6</h6>
+                <p>Example Paragraph</p>
+
+                <div class="h1">Example Heading1</div>
+                <div class="h2">Example Heading2</div>
+                <div class="h3">Example Heading3</div>
+                <div class="h4">Example Heading3</div>
+                <div class="h5">Example Heading5</div>
+                <div class="h6">Example Heading6</div>
+                <div class="p">Example Paragraph</div>
+                </xmp>
+              </code> 
+            </pre>
+        <div class="container">
+          <h2>Weights</h2>
+          <p>
+            You can use the classes to apply differernt font-weights to you text.
+          </p>
+        </div>
+        <div class="content">
+          <div class="h1 typeBolder">Example Heading1</div>
+          <div class="h1 typeBold">Example Heading1</div>
+          <div class="h1 typeBoltLite">Example Heading1</div>
+          <div class="h1 typeRegularBolder">Example Heading1</div>
+          <div class="h1 typeRegularBold">Example Heading1</div>
+          <div class="h1 typeRegular">Example Heading1</div>
+          <div class="h1 typeThin">Example Heading1</div>
+          <div class="h1 typeThinner">Example Heading1</div>
+        </div>
+        <pre>
+              <code class="language-html" data-prismjs-copy="Copy" class="code">
+                <xmp>
+                <div class="h1 typeBolder">Example Heading1</div>
+                <div class="h1 typeBold">Example Heading1</div>
+                <div class="h1 typeBoltLite">Example Heading1</div>
+                <div class="h1 typeRegularBolder">Example Heading1</div>
+                <div class="h1 typeRegularBold">Example Heading1</div>
+                <div class="h1 typeRegular">Example Heading1</div>
+                <div class="h1 typeThin">Example Heading1</div>
+                <div class="h1 typeThinner">Example Heading1</div>
+                </xmp>
+              </code> 
+            </pre>
+      </section>
+    </main>
+  </div>
+  <script src="./prism/prism.js"></script>
+  <script src="./ComponentsStyles/logic.js"></script>
+</body>
+
+</html>

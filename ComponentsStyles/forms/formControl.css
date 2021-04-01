@@ -1,0 +1,98 @@
+@import "../root.css";
+
+.formContainer {
+  background-color: #fff;
+  border: 0.1rem solid var(--primaryScroll);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.formHeader {
+  border-bottom: 0.1rem solid #f0f0f0;
+  background-color: var(--thirdPrimaryLight);
+  color: var(--primaryBgLight);
+  padding: 2rem 4rem;
+}
+
+.formHeader h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 3rem 4rem;
+}
+
+.formControl {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.formControl label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.formControl input {
+  border: 0.2rem solid var(--primaryScroll);
+  border-radius: 0.4rem;
+  display: block;
+  font-family: inherit;
+  font-size: 1.75rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.formControl input:focus {
+  outline: 0;
+  border-color: var(--primaryLight);
+}
+
+.formControl.success input {
+  border-color: var(--thirdPrimaryLight);
+}
+
+.formControl.error input {
+  border-color: var(--danger);
+}
+
+.formControl i {
+  visibility: hidden;
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+}
+
+.formControl.success i.fa-check-circle {
+  color: var(--thirdPrimaryLight);
+  visibility: visible;
+  font-size: 1.5rem;
+}
+
+.formControl.error i.fa-exclamation-circle {
+  color: var(--danger);
+  visibility: visible;
+  font-size: 1.5rem;
+}
+
+.formControl small {
+  font-size: 1.25rem;
+
+  color: var(--danger);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.formControl.error small {
+  visibility: visible;
+}
+
+.formButton {
+  margin: 0rem 0rem;
+}

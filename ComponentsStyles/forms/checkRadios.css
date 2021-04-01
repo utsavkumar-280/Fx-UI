@@ -1,0 +1,76 @@
+@import "../root.css";
+
+.radioContainer {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; */
+}
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.75rem;
+  background: var(--thirdPrimaryLight);
+  color: var(--primaryBgLight);
+  cursor: pointer;
+  transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
+}
+
+.radioLabel:not(:last-of-type) {
+  border-right: 0.1rem solid var(--hover);
+}
+
+.radioInput:checked + .radioLabel {
+  background-color: var(--hover);
+}
+
+/* Toggle CheckBoxes */
+.toggle {
+  --width: 5rem;
+  --height: calc(var(--width) / 2);
+  --border-radius: calc(var(--height) / 2);
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleFill {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background: var(--primaryScroll);
+  transition: background 0.2s;
+}
+
+.toggleInput:checked ~ .toggleFill {
+  background: var(--hover);
+}
+
+.toggleFill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--height);
+  width: var(--height);
+  background: #ffffff;
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  transition: transform 0.2s;
+}
+
+.toggleInput:checked ~ .toggleFill::after {
+  transform: translateX(var(--height));
+}

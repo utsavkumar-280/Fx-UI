@@ -1,0 +1,99 @@
+.h1,
+h1 {
+  display: block;
+  font-size: 3.2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h2,
+h2 {
+  display: block;
+  font-size: 2.4em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h3,
+h3 {
+  display: block;
+  font-size: 1.872em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h4,
+h4 {
+  display: block;
+  font-size: 1.6em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h5,
+h5 {
+  display: block;
+  font-size: 1.328em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h6,
+h6 {
+  display: block;
+  font-size: 1.072em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.p,
+p {
+  display: block;
+  font-size: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.typeBolder {
+  font-weight: 900;
+}
+.typeBold {
+  font-weight: 800;
+}
+.typeBoldLite {
+  font-weight: 700;
+}
+.typeRegularBolder {
+  font-weight: 600;
+}
+.typeRegularBold {
+  font-weight: 500;
+}
+.typeRegular {
+  font-weight: 400;
+}
+.typeThin {
+  font-weight: 300;
+}
+.typeThinner {
+  font-weight: 200;
+}

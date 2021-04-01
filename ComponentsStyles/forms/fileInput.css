@@ -1,0 +1,23 @@
+@import "../root.css";
+
+.fileInputContainer {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileInputButton:active {
+  background: var(--thirdPrimary);
+}
+
+.fileInputLabel {
+  max-width: 250px;
+  font-size: 0.95em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

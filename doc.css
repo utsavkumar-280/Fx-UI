@@ -1,0 +1,357 @@
+@import "./componentsMain.css";
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primaryBgDark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primaryBgLight);
+  /* border-radius: 1rem; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+::-webkit-scrollbar-track:hover {
+  background-color: var(--secondaryLight);
+}
+
+.mainPageLayout {
+  width: 70vw;
+  margin: 0 15vw;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    " mainHeader mainHeader"
+    "sidebar mainContentContainer";
+}
+
+.mainHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--primaryBgLight);
+
+  padding: 1rem;
+  height: 7vh;
+  border-bottom: 0.01rem solid var(--divider);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: mainHeader;
+}
+
+.logoContainer > a {
+  font-size: 3rem;
+
+  color: var(--primary);
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.logoContainer img {
+  width: auto;
+  height: 4rem;
+}
+
+.grid20-80 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.sidebar {
+  position: sticky;
+  top: 7vh;
+  z-index: 1;
+  height: 93vh;
+  overflow-y: scroll;
+  grid-area: sidebar;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+  background: var(--primaryBgDark);
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--primaryScroll);
+  /* border-radius: 1rem; */
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+.sidebar::-webkit-scrollbar-track:hover {
+  background-color: var(--secondaryLight);
+}
+.scrollContainer {
+  padding: 2rem;
+}
+.scrollContainer > h2 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--primaryLight);
+  padding: 2rem 0rem;
+  margin: 0;
+}
+
+.scrollContainer > ul > li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primaryLight);
+  padding: 0rem;
+  border-radius: 0.5rem;
+  transition: color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.scrollContainer > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: var(--primaryLight);
+  padding: 1rem;
+}
+
+.scrollContainer > ul > li > a:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.scrollContainer > ul > li:hover {
+  background-color: var(--secondaryLight);
+  color: var(--secondary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.mainContentContainer {
+  scroll-behavior: smooth;
+  position: sticky;
+  top: 7vh;
+  z-index: 1;
+  height: 93vh;
+  overflow-y: scroll;
+  padding: 2rem 4rem;
+  grid-area: mainContentContainer;
+}
+
+.mainContentContainer::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+/* Track */
+.mainContentContainer::-webkit-scrollbar-track {
+  background: var(--primaryBgDark);
+}
+
+/* Handle */
+.mainContentContainer::-webkit-scrollbar-thumb {
+  background: var(--primaryScroll);
+}
+
+/* Handle on hover */
+.mainContentContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+.mainContentContainer::-webkit-scrollbar-track:hover {
+  background-color: var(--secondaryLight);
+}
+
+.container > h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 0.5rem 0rem;
+  margin: 0;
+}
+.container > h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 0rem 0.5rem 0rem;
+  margin: 0;
+}
+.container > h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primaryLight);
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  margin: 0;
+}
+.container > p {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--primaryLight);
+  padding: 0rem 0rem 0.5rem 0rem;
+  margin: 0;
+}
+.content {
+  border: 0.2rem solid var(--divider);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.alignCenter {
+  align-items: center;
+}
+.vh50 {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.flexRow {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contentContainer {
+  padding: 1rem 0 4rem 0;
+}
+
+pre {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.menuBtn {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* responsive */
+@media only screen and (max-width: 1240px) {
+  .mainPageLayout {
+    width: 85%;
+    margin: 0 7.5vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "sidebar mainContentContainer";
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .mainPageLayout {
+    margin: 0 5vw;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "sidebar mainContentContainer";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainPageLayout {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "sidebar mainContentContainer";
+  }
+  .mainContentContainer {
+    padding: 1rem 2rem;
+    grid-area: mainContentContainer;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mainPageLayout {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      " mainHeader mainHeader"
+      "mainContentContainer mainContentContainer";
+  }
+  .mainContentContainer {
+    padding: 0.5rem 1rem;
+    grid-area: mainContentContainer;
+    height: 90vh;
+  }
+  .mainHeader {
+    height: 10vh;
+  }
+  .sidebar {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70vw;
+    overflow-y: scroll;
+    background-color: white;
+    transform: translateX(-100%);
+    opacity: 100%;
+    transition: all 0.4s ease;
+  }
+
+  .scrollContainer > h2 {
+    padding: 3rem 0rem;
+    font-size: 2.5rem;
+  }
+  .scrollContainer > ul > li {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  .scrollContainer > ul > li > a {
+    padding: 2rem;
+  }
+  .menuBtn {
+    margin: 1rem;
+    visibility: visible;
+    opacity: 1;
+  }
+  .menuBtn:focus {
+    box-shadow: none;
+  }
+
+  .sidebarActive {
+    transform: translateX(0%);
+    opacity: 100%;
+    transition: all 0.4s ease;
+  }
+}

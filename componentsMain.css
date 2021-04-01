@@ -1,0 +1,20 @@
+@import "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
+
+@import "./ComponentsStyles/accordian.css";
+@import "./ComponentsStyles/alerts.css";
+@import "./ComponentsStyles/badge.css";
+@import "./ComponentsStyles/breadcrumb.css";
+@import "./ComponentsStyles/buttons.css";
+@import "./ComponentsStyles/carousel.css";
+@import "./ComponentsStyles/dropdowns.css";
+@import "./ComponentsStyles/modal.css";
+@import "./ComponentsStyles/toasts.css";
+
+@import "./ComponentsStyles/forms/formControl.css";
+@import "./ComponentsStyles/forms/fileInput.css";
+@import "./ComponentsStyles/forms/selects.css";
+@import "./ComponentsStyles/forms/dataList.css";
+@import "./ComponentsStyles/forms/checkRadios.css";
+@import "./ComponentsStyles/forms/range.css";
+
+@import "./ComponentsStyles/content/typography.css";

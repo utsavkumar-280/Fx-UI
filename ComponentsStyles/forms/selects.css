@@ -1,0 +1,22 @@
+@import "../root.css";
+
+.select {
+  padding: 0.5rem 1.5rem;
+  color: var(--thirdPrimaryLight);
+  background-color: var(--primaryBgLight);
+  border: 0.2rem solid var(--thirdPrimaryLight);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.select:focus,
+.select:hover {
+  outline: none;
+  border: 0.2rem solid var(--thirdPrimaryLight);
+}
+
+.select option {
+  background-color: var(--primaryBgLight);
+}

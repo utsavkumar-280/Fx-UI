@@ -1,0 +1,68 @@
+#mainModal {
+  position: relative;
+}
+
+.modalBg {
+  z-index: 3;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.747);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.25s, opacity 0.25s ease-in-out;
+}
+
+.bgActive {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  z-index: 5;
+  background-color: white;
+  width: 50vh;
+  height: 30vh;
+  display: grid;
+  grid-template-rows: 2fr 3fr 2fr;
+  border-radius: 1rem;
+}
+.crossBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: var(--primaryBgLight);
+}
+.modalHead {
+  background-color: var(--thirdPrimaryLight);
+  color: var(--primaryBgLight);
+  padding: 2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+}
+.modalContent {
+  background-color: var(--primaryBgLight);
+  padding: 2rem;
+}
+.modalFooter {
+  padding: 2rem;
+  background-color: var(--primaryBgLight);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.modalBtn {
+  margin: 0 0 0 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+}
