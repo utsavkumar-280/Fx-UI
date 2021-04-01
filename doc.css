@@ -310,10 +310,10 @@ pre {
   .mainContentContainer {
     padding: 0.5rem 1rem;
     grid-area: mainContentContainer;
-    height: 93vh;
+    height: 90vh;
   }
   .mainHeader {
-    height: 7vh;
+    height: 10vh;
   }
   .sidebar {
     z-index: 5;
