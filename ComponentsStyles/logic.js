@@ -84,11 +84,8 @@ if (menuVar && sideBar) {
 
 for (const sideClicker of sideClickers) {
   sideClicker.addEventListener("click", () => {
-    console.log("clicked sideClicler");
     sideBar.classList.remove("sidebarActive");
-    console.log(sideBar.classList);
     menuVar.classList.toggle("fa-times");
-    console.log(menuVar.classList);
   });
 }
 
