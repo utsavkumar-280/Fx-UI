@@ -1,41 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary: #111827;
-  --primaryLight: #6b7280;
-  --primaryLighter: #9b9b9b;
-  --primaryBgLight: #ffffff;
-  --primaryBgDark: #f1f1f1;
+	--primary: #111827;
+	--primaryLight: #6b7280;
+	--primaryLighter: #9b9b9b;
+	--primaryBgLight: #ffffff;
+	--primaryBgDark: #f1f1f1;
 
-  --divider: #c2c2c25d;
-  --primaryScroll: #d1d1d1;
-  --hover: #28beac;
+	--divider: #c2c2c25d;
+	--primaryScroll: #d1d1d1;
+	--hover: #28beac;
 
-  --secondary: #0e7490;
-  --secondaryLight: #e2feff;
+	--secondary: #0e7490;
+	--secondaryLight: #e2feff;
 
-  --thirdPrimary: #14b8a6;
-  --thirdPrimaryLight: #2dd4bf;
-  --thirdPrimaryLighter: #f0fdfa;
-  --thirdPrimaryDark: #0f766e;
+	--thirdPrimary: #14b8a6;
+	--thirdPrimaryLight: #2dd4bf;
+	--thirdPrimaryLighter: #f0fdfa;
+	--thirdPrimaryDark: #0f766e;
 
-  --success: #166534;
-  --successBg: #bbf7d0;
+	--success: #166534;
+	--successBg: #bbf7d0;
 
-  --warning: #b45309;
-  --warningBg: #fef9c3;
+	--warning: #b45309;
+	--warningBg: #fef9c3;
 
-  --danger: #b91c1c;
-  --dangerBg: #fecaca;
+	--danger: #b91c1c;
+	--dangerBg: #fecaca;
 
-  --info: #0e7490;
-  --infoBg: #cffafe;
+	--info: #0e7490;
+	--infoBg: #cffafe;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+	font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 640px) {
+	.mainDropMobile {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.dropItemMobile {
+		padding: 1.5rem;
+	}
 }
